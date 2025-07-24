@@ -124,6 +124,10 @@ source venv/bin/activate
 python main.py --file document.txt
 ```
 
+> 💡 **Try these sample files**: 
+> - `document.txt` - Comprehensive AI article (2,500+ characters)
+> - `sample.txt` - Shorter AI overview (1,000+ characters)
+
 ### 📝 Command Line Input
 ```bash
 source venv/bin/activate
@@ -212,8 +216,8 @@ hello-claude/
 ├── test_setup.py       # Setup verification script
 ├── demo.py             # Showcase script with predefined example
 ├── Makefile            # Development workflow commands
-├── sample.txt          # Sample text for testing
-├── document.txt        # Sample document for testing
+├── sample.txt          # Sample text for testing (1,000+ chars)
+├── document.txt        # Sample document for testing (2,500+ chars)
 ├── .replit             # Replit configuration
 ├── pyproject.toml      # Modern Python packaging
 
