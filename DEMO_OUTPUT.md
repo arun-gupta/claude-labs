@@ -75,7 +75,7 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 ### **GitHub Codespaces Interface Screenshot:**
 
 #### **🖥️ Hello Claude Demo on GitHub Codespaces**
-![Hello Claude Demo on GitHub Codespaces](assets/github-codespaces-output.png)
+![Hello Claude Demo on GitHub Codespaces](assets/codesapces-output.png)
 
 *Complete GitHub Codespaces environment showing VS Code interface with the Hello Claude demo running successfully, featuring the rich terminal output with colorful panels and progress bars*
 
