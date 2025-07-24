@@ -6,7 +6,7 @@
 
 ### Option 1: Automated Setup (Recommended)
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 ./setup.sh
 ```
@@ -15,7 +15,7 @@ The setup script will guide you through everything, including getting your API k
 
 ### Option 2: Manual Setup
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 
 # Create and activate virtual environment
@@ -34,7 +34,7 @@ python main.py "Your text to summarize here"
 
 ### Option 3: Using Make
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 make install
 export ANTHROPIC_API_KEY='your-key-here'
@@ -44,7 +44,7 @@ make demo
 ## 🎯 One-Liner Setup
 
 ```bash
-git clone https://github.com/yourusername/claude-labs.git && cd claude-labs && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && export ANTHROPIC_API_KEY='your-key' && python main.py "Test text"
+git clone https://github.com/arun-gupta/claude-labs.git && cd claude-labs && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && export ANTHROPIC_API_KEY='your-key' && python main.py "Test text"
 ```
 
 ## 🧪 Test Your Setup

@@ -47,7 +47,7 @@ A comprehensive showcase of Claude's capabilities designed for immediate develop
 **Experience Claude with a beautiful, interactive web interface on your local machine!**
 
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 ./setup.sh
 ./web.sh
@@ -62,7 +62,7 @@ cd claude-labs
 
 ### 💻 Option 3: CLI Setup (For Developers)
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 ./setup.sh
 export ANTHROPIC_API_KEY='your-api-key-here'
@@ -90,7 +90,7 @@ The setup script will:
 
 ### 💻 Option 4: Manual Setup
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 
 # Create and activate virtual environment
@@ -109,7 +109,7 @@ python main.py "This is a long text that needs to be summarized into a concise v
 
 ### 🛠️ Option 5: Using Make
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 make install
 export ANTHROPIC_API_KEY='your-api-key-here'

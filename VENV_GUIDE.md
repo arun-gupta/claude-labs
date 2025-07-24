@@ -77,7 +77,7 @@ claude-labs/
 
 ### 1. First Time Setup
 ```bash
-git clone https://github.com/yourusername/claude-labs.git
+git clone https://github.com/arun-gupta/claude-labs.git
 cd claude-labs
 ./setup.sh
 ```
