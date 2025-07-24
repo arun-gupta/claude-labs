@@ -1,21 +1,2 @@
 language = "python3"
-run = "python main.py --url https://www.anthropic.com/news/introducing-claude"
-entrypoint = "main.py"
-
-[env]
-PYTHONPATH = "${PYTHONPATH}:/home/runner/${REPL_SLUG}"
-
-[packager]
-language = "python3"
-ignoredPackages = ["unit_tests"]
-
-[packager.features]
-packageSearch = true
-guessImports = true
-
-[languages.python3]
-pattern = "**/*.py"
-syntax = "python"
-
-[languages.python3.languageServer]
-start = [ "pylsp" ] 
+run = "python main.py --url https://www.anthropic.com/news/introducing-claude" 

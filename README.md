@@ -208,7 +208,7 @@ hello-claude/
 ├── document.txt        # Sample document for testing
 ├── .replit             # Replit configuration
 ├── pyproject.toml      # Modern Python packaging
-├── replit.nix          # Replit Nix environment
+
 ├── replit-setup.sh     # Replit-specific setup script
 ├── venv/               # Virtual environment (created during setup)
 ├── .gitignore          # Prevents accidental commits of secrets
