@@ -39,7 +39,7 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 ### **Replit Interface Screenshot:**
 
 #### **🖥️ Claude Labs on Replit**
-![Hello Claude Demo on Replit](assets/replit-output.png)
+![Claude Labs on Replit](assets/replit-output.png)
 
 *Complete Replit workspace showing Claude Labs running successfully with URL input, dependencies installed, and Claude summarization in action*
 
@@ -75,7 +75,7 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 ### **GitHub Codespaces Interface Screenshot:**
 
 #### **🖥️ Claude Labs on GitHub Codespaces**
-![Hello Claude Demo on GitHub Codespaces](assets/codesapces-output.png)
+![Claude Labs on GitHub Codespaces](assets/codesapces-output.png)
 
 *Complete GitHub Codespaces environment showing VS Code interface with Claude Labs running successfully, featuring the rich terminal output with colorful panels and progress bars*
 
@@ -111,7 +111,7 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 ### **Gitpod Interface Screenshot:**
 
 #### **🖥️ Claude Labs on Gitpod**
-![Hello Claude Demo on Gitpod](assets/gitpod-output.png)
+![Claude Labs on Gitpod](assets/gitpod-output.png)
 
 *Complete Gitpod workspace showing the cloud development environment with VS Code interface, terminal with rich output, and Claude Labs running successfully*
 
