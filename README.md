@@ -16,14 +16,24 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ## 🚀 Quick Start (5 minutes or less!)
 
-### 💻 Option 1: Automated Setup (Local)
+### 🌐 **Option 1: Cloud Platforms (Recommended!)**
+
+**🚀 Replit - One-click setup:**
+[![Open in Replit](https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF)](https://replit.com)
+([Detailed setup guide](#-replit-integration))
+
+**☁️ GitHub Codespaces - Full VS Code environment:**
+[![Open in Codespaces](https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717)](https://github.com/codespaces)
+([Detailed setup guide](#️-github-codespaces))
+
+> 💡 **Why cloud platforms?** Zero setup, instant access, pre-configured environment, and you can start coding immediately!
+
+### 💻 Option 2: Automated Setup (Local)
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
 ./setup.sh
 ```
-
-> 💡 **Want to try in the cloud?** See [Cloud Platform Integrations](#-cloud-platform-integrations) below for Replit and GitHub Codespaces options!
 
 The setup script will:
 - ✅ Create a virtual environment
@@ -37,7 +47,7 @@ The setup script will:
 - **Permanent**: Save to shell config file (persistent)
 - **Skip**: Set up later using `./set_api_key.sh`
 
-### Option 2: Manual Setup
+### 💻 Option 3: Manual Setup
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
@@ -56,7 +66,7 @@ export ANTHROPIC_API_KEY='your-api-key-here'
 python main.py "This is a long text that needs to be summarized into a concise version that captures the key points and main ideas."
 ```
 
-### Option 3: Using Make
+### 🛠️ Option 4: Using Make
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
