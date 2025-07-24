@@ -17,7 +17,7 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 ## 🚀 Quick Start (5 minutes or less!)
 
 ### 🌐 Option 1: Try on Replit (Easiest!)
-[![Run on Replit](https://replit.com/badge/github/arun-gupta/hello-claude)](https://replit.com/github/arun-gupta/hello-claude)
+[![Run on Replit](https://replit.com/badge/github/arun-gupta/hello-claude?lite=true)](https://replit.com/github/arun-gupta/hello-claude)
 
 1. Click the "Run on Replit" button above
 2. Set your API key in Replit Secrets (Tools → Secrets)
