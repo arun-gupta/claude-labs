@@ -61,7 +61,7 @@ which python  # Should show path to venv/bin/python
 ## 📁 Project Structure with Virtual Environment
 
 ```
-hello-claude/
+claude-labs/
 ├── main.py              # Main application
 ├── requirements.txt     # Dependencies list
 ├── venv/               # Virtual environment (created during setup)
@@ -77,8 +77,8 @@ hello-claude/
 
 ### 1. First Time Setup
 ```bash
-git clone https://github.com/yourusername/hello-claude.git
-cd hello-claude
+git clone https://github.com/yourusername/claude-labs.git
+cd claude-labs
 ./setup.sh
 ```
 

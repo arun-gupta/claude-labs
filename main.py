@@ -162,7 +162,7 @@ def read_url_content(url: str) -> str:
             
             # Fetch content with timeout and user agent
             headers = {
-                'User-Agent': 'Hello-Claude-Demo/1.0 (https://github.com/arun-gupta/hello-claude)'
+                'User-Agent': 'Claude-Labs/1.0 (https://github.com/arun-gupta/claude-labs)'
             }
             
             response = requests.get(url, headers=headers, timeout=30)

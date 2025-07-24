@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hello-claude"
+name = "claude-labs"
 version = "1.0.0"
 description = "A lightning-fast demo showcasing Claude API for text summarization with excellent developer experience"
 readme = "README.md"
@@ -37,12 +37,12 @@ dev = [
 ]
 
 [project.scripts]
-hello-claude = "main:main"
+claude-labs = "main:main"
 
 [project.urls]
-Homepage = "https://github.com/arun-gupta/hello-claude"
-Repository = "https://github.com/arun-gupta/hello-claude"
-Issues = "https://github.com/arun-gupta/hello-claude/issues"
+Homepage = "https://github.com/arun-gupta/claude-labs"
+Repository = "https://github.com/arun-gupta/claude-labs"
+Issues = "https://github.com/arun-gupta/claude-labs/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

@@ -47,8 +47,8 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 **Experience Claude with a beautiful, interactive web interface on your local machine!**
 
 ```bash
-git clone https://github.com/yourusername/hello-claude.git
-cd hello-claude
+git clone https://github.com/yourusername/claude-labs.git
+cd claude-labs
 ./setup.sh
 ./web.sh
 ```
@@ -62,8 +62,8 @@ cd hello-claude
 
 ### 💻 Option 3: CLI Setup (For Developers)
 ```bash
-git clone https://github.com/yourusername/hello-claude.git
-cd hello-claude
+git clone https://github.com/yourusername/claude-labs.git
+cd claude-labs
 ./setup.sh
 export ANTHROPIC_API_KEY='your-api-key-here'
 python main.py --url https://www.anthropic.com/news/introducing-claude
@@ -90,8 +90,8 @@ The setup script will:
 
 ### 💻 Option 4: Manual Setup
 ```bash
-git clone https://github.com/yourusername/hello-claude.git
-cd hello-claude
+git clone https://github.com/yourusername/claude-labs.git
+cd claude-labs
 
 # Create and activate virtual environment
 python3 -m venv venv
@@ -109,8 +109,8 @@ python main.py "This is a long text that needs to be summarized into a concise v
 
 ### 🛠️ Option 5: Using Make
 ```bash
-git clone https://github.com/yourusername/hello-claude.git
-cd hello-claude
+git clone https://github.com/yourusername/claude-labs.git
+cd claude-labs
 make install
 export ANTHROPIC_API_KEY='your-api-key-here'
 make demo
@@ -160,7 +160,7 @@ This project is configured for multiple cloud development platforms!
 
 **On GitHub Codespaces:**
 1. **Go to**: [GitHub Codespaces](https://github.com/codespaces)
-2. **Create**: Click "New codespace" → Select "arun-gupta/hello-claude" from dropdown
+2. **Create**: Click "New codespace" → Select "arun-gupta/claude-labs" from dropdown
 3. **Configure**: Select branch, region, and machine type (defaults work fine)
 4. **Create**: Click "Create codespace" button
 5. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
@@ -201,7 +201,7 @@ This project is configured for multiple cloud development platforms!
 
 <div align="center">
 
-<a href="https://gitpod.io/#https://github.com/arun-gupta/hello-claude" target="_blank">
+<a href="https://gitpod.io/#https://github.com/arun-gupta/claude-labs" target="_blank">
 <img src="https://img.shields.io/badge/⚡_Open_Gitpod-FFAE33?style=for-the-badge&logo=gitpod&logoColor=white&labelColor=FFAE33&color=FFAE33" alt="Open in Gitpod" />
 </a>
 
@@ -339,13 +339,13 @@ Copy only the lines without `#` at the beginning.
 ### ❌ "Can't find Codespaces button" or "Codespaces not working"
 **Solution:** Use the new GitHub Codespaces interface:
 1. **Go to**: [github.com/codespaces](https://github.com/codespaces)
-2. **Click**: "New codespace" → Select "arun-gupta/hello-claude" from dropdown
+2. **Click**: "New codespace" → Select "arun-gupta/claude-labs" from dropdown
 3. **Alternative**: Use Replit integration instead
 
 ## 🏗️ Project Structure
 
 ```
-hello-claude/
+claude-labs/
 ├── main.py              # Main application with comprehensive error handling
 ├── app.py               # Streamlit web interface
 ├── web.py               # Simple Python web app launcher
