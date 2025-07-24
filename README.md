@@ -6,9 +6,9 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ## ✨ Features
 
+- **⚡ Lightning-fast setup** - From zero to working in under 5 minutes (or 30 seconds with cloud platforms!)
 - **🌐 Beautiful web interface** - Interactive Streamlit app with chat, file upload, and more
-- **⚡ Lightning-fast setup** - From zero to working in under 5 minutes
-- **🎯 Real-world use case** - Practical text summarization that actually works
+- **🎯 Real-world use cases** - Chat, document analysis, web content processing, and more
 - **🛡️ Bulletproof error handling** - Helpful messages that guide you to success
 - **📖 Clean, well-commented code** - Easy to understand and modify
 - **🔧 Multiple input methods** - Command line, file input, URL input, or stdin
@@ -20,13 +20,6 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 ### 🌐 **Option 1: Cloud Platforms (Recommended!)**
 
 **Zero setup, instant access to Claude's capabilities!**
-
-```bash
-git clone https://github.com/yourusername/hello-claude.git
-cd hello-claude
-./setup.sh
-./web.sh
-```
 
 **✨ Cloud Platform Benefits:**
 - **🚀 Zero Setup** - Works immediately, no installation required
