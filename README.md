@@ -159,13 +159,11 @@ This project is configured for multiple cloud development platforms!
 </div>
 
 **On GitHub Codespaces:**
-1. **Go to**: [GitHub Codespaces](https://github.com/codespaces)
-2. **Create**: Click "New codespace" → Select "arun-gupta/claude-labs" from dropdown
-3. **Configure**: Select branch, region, and machine type (defaults work fine)
-4. **Create**: Click "Create codespace" button
-5. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
-6. **Run**: `./web.sh`
-7. **Access Web App**: Go to **Ports** tab → Click **"Open in Browser"** next to port 8501
+1. **Click**: [![Open in Codespaces](https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717)](https://github.com/codespaces/new?template_repository=arun-gupta/claude-labs)
+2. **Create**: Click "Create codespace on main" (defaults work fine)
+3. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
+4. **Run**: `./web.sh`
+5. **Access Web App**: Go to **Ports** tab → Click **"Open in Browser"** next to port 8501
 
 **Features:**
 - ✅ **Full VS Code**: Complete development environment
@@ -337,10 +335,9 @@ python main.py --url https://www.anthropic.com/news/introducing-claude
 Copy only the lines without `#` at the beginning.
 
 ### ❌ "Can't find Codespaces button" or "Codespaces not working"
-**Solution:** Use the new GitHub Codespaces interface:
-1. **Go to**: [github.com/codespaces](https://github.com/codespaces)
-2. **Click**: "New codespace" → Select "arun-gupta/claude-labs" from dropdown
-3. **Alternative**: Use Replit integration instead
+**Solution:** Use the direct Codespaces link:
+1. **Click**: [Open in Codespaces](https://github.com/codespaces/new?template_repository=arun-gupta/claude-labs)
+2. **Alternative**: Use Replit integration instead
 
 ## 🏗️ Project Structure
 
