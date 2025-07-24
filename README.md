@@ -112,14 +112,17 @@ This project is fully configured for Replit!
 
 ### 🌐 URL Input (Easiest!)
 ```bash
-# Activate virtual environment first
 source venv/bin/activate
-
-# Then fetch and summarize any webpage
 python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 
-> 💡 **Try this URL**: Copy/paste the command above to test with a real article about Claude!
+> 💡 **Try this URL**: Copy/paste the commands above to test with a real article about Claude!
+
+**🎯 Quick Copy-Paste Commands:**
+```bash
+source venv/bin/activate
+python main.py --url https://www.anthropic.com/news/introducing-claude
+```
 
 ### 📄 File Input
 ```bash
@@ -193,6 +196,15 @@ pip install -r requirements.txt
 
 ### ❌ "Text is too short to summarize meaningfully!"
 **Solution:** Provide at least 10 characters of text for meaningful summarization.
+
+### ❌ "zsh: command not found: #" or "command not found" errors
+**Solution:** You copied the comment lines! Only copy the actual commands:
+```bash
+# ❌ Don't copy this line (it's a comment)
+source venv/bin/activate
+python main.py --url https://www.anthropic.com/news/introducing-claude
+```
+Copy only the lines without `#` at the beginning.
 
 ## 🏗️ Project Structure
 
