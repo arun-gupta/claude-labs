@@ -2,28 +2,31 @@
 
 > **What the Hello Claude Demo looks like with a working API key**
 
-## 🚀 **Command Line Demo**
+## 🌐 **URL Input Demo (Easiest!)**
 
 ### **Input:**
 ```bash
-python main.py "Artificial Intelligence (AI) and Machine Learning (ML) represent one of the most transformative technological developments of our time. These technologies are fundamentally changing how we approach problem-solving, decision-making, and automation across virtually every industry and sector of society."
+python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 
 ### **Expected Output:**
 ```
-📊 Original text (298 characters):
+🌐 Fetching content from: https://www.anthropic.com/news/introducing-claude
+✅ Successfully fetched 2847 characters
+
+📊 Original text (2847 characters):
 --------------------------------------------------
-Artificial Intelligence (AI) and Machine Learning (ML) represent one of the most transformative technological developments of our time. These technologies are fundamentally changing how we approach problem-solving, decision-making, and automation across virtually every industry and sector of society.
+[Content fetched from the URL would appear here]
 --------------------------------------------------
 
 🤖 Summarizing with Claude...
 
 ✨ Summary:
 ==================================================
-AI and ML are revolutionizing problem-solving, decision-making, and automation across all industries and sectors of society, representing a major technological transformation.
+[Summary of the URL content would appear here]
 ==================================================
-📈 Summary length: 156 characters
-📉 Compression ratio: 52.3%
+📈 Summary length: 423 characters
+📉 Compression ratio: 14.9%
 ```
 
 ## 📁 **File Input Demo**
@@ -91,6 +94,30 @@ python main.py --url https://www.anthropic.com/news/introducing-claude
 ==================================================
 📈 Summary length: 423 characters
 📉 Compression ratio: 14.9%
+```
+
+## 📝 **Command Line Demo**
+
+### **Input:**
+```bash
+python main.py "Artificial Intelligence (AI) and Machine Learning (ML) represent one of the most transformative technological developments of our time. These technologies are fundamentally changing how we approach problem-solving, decision-making, and automation across virtually every industry and sector of society."
+```
+
+### **Expected Output:**
+```
+📊 Original text (298 characters):
+--------------------------------------------------
+Artificial Intelligence (AI) and Machine Learning (ML) represent one of the most transformative technological developments of our time. These technologies are fundamentally changing how we approach problem-solving, decision-making, and automation across virtually every industry and sector of society.
+--------------------------------------------------
+
+🤖 Summarizing with Claude...
+
+✨ Summary:
+==================================================
+AI and ML are revolutionizing problem-solving, decision-making, and automation across all industries and sectors of society, representing a major technological transformation.
+==================================================
+📈 Summary length: 156 characters
+📉 Compression ratio: 52.3%
 ```
 
 ## 🎬 **Interactive Demo**

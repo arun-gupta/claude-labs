@@ -76,28 +76,28 @@ make demo
 
 ## 📖 Usage Examples
 
-### Command Line Input
+### 🌐 URL Input (Easiest!)
 ```bash
 # Activate virtual environment first
 source venv/bin/activate
 
-# Then run the demo
-python main.py "Your text here"
+# Then fetch and summarize any webpage
+python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 
-### File Input
+> 💡 **Try this URL**: Copy/paste the command above to test with a real article about Claude!
+
+### 📄 File Input
 ```bash
 source venv/bin/activate
 python main.py --file document.txt
 ```
 
-### URL Input
+### 📝 Command Line Input
 ```bash
 source venv/bin/activate
-python main.py --url https://www.anthropic.com/news/introducing-claude
+python main.py "Your text here"
 ```
-
-> 💡 **Try this URL**: Copy/paste the command above to test with a real article about Claude!
 
 ### Interactive Mode
 ```bash

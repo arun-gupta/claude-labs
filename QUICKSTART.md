@@ -71,18 +71,18 @@ source venv/bin/activate
 python demo.py
 ```
 
+## 🌐 URL Input (Easiest!)
+
+```bash
+source venv/bin/activate
+python main.py --url https://www.anthropic.com/news/introducing-claude
+```
+
 ## 📁 File Input
 
 ```bash
 source venv/bin/activate
 python main.py --file document.txt
-```
-
-## 🌐 URL Input
-
-```bash
-source venv/bin/activate
-python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 
 ## 🛠️ Make Commands

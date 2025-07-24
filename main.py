@@ -192,9 +192,9 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python main.py "This is a long text that needs to be summarized..."
-  python main.py --file document.txt
   python main.py --url https://www.anthropic.com/news/introducing-claude
+  python main.py --file document.txt
+  python main.py "This is a long text that needs to be summarized..."
   echo "Your text here" | python main.py
         """
     )
