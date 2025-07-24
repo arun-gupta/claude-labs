@@ -2,7 +2,7 @@
 
 > **What Claude Labs looks like with a working API key**
 
-## 🚀 **Replit Demo (Easiest - One-Click Experience!)**
+## 🚀 **Replit Demo - Document Summarizer (File Upload Interface!)**
 
 ### **Setup Process:**
 ```
@@ -38,14 +38,14 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 ### **Replit Interface Screenshot:**
 
-#### **🖥️ Claude Labs on Replit**
+#### **🖥️ Claude Labs on Replit - Document Summarizer**
 ![Claude Labs on Replit](assets/replit-output.png)
 
-*Complete Replit workspace showing Claude Labs running successfully with URL input, dependencies installed, and Claude summarization in action*
+*Complete Replit workspace showing Claude Labs Document Summarizer with File Upload interface, demonstrating the web app's file processing capabilities*
 
 **💡 Note:** This screenshot shows the actual Replit interface with the demo working.
 
-## ☁️ **GitHub Codespaces Demo (Full IDE Experience!)**
+## ☁️ **GitHub Codespaces Demo - URL Summarizer (Full IDE Experience!)**
 
 ### **Setup Process:**
 ```
@@ -74,12 +74,12 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 ### **GitHub Codespaces Interface Screenshot:**
 
-#### **🖥️ Claude Labs on GitHub Codespaces**
-![Claude Labs on GitHub Codespaces](assets/codesapces-output.png)
+#### **🖥️ Claude Labs on GitHub Codespaces - URL Summarizer**
+![Claude Labs on GitHub Codespaces](assets/codespaces-output.png)
 
-*Complete GitHub Codespaces environment showing VS Code interface with Claude Labs running successfully, featuring the rich terminal output with colorful panels and progress bars*
+*Complete GitHub Codespaces environment showing VS Code interface with Claude Labs URL Summarizer, featuring rich terminal output with colorful panels and progress bars for web content processing*
 
-## ⚡ **Gitpod Demo (Cloud Development Environment!)**
+## ⚡ **Gitpod Demo - Chat Interface (Cloud Development Environment!)**
 
 ### **Setup Process:**
 ```
@@ -110,10 +110,10 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 ### **Gitpod Interface Screenshot:**
 
-#### **🖥️ Claude Labs on Gitpod**
+#### **🖥️ Claude Labs on Gitpod - Chat Interface**
 ![Claude Labs on Gitpod](assets/gitpod-output.png)
 
-*Complete Gitpod workspace showing the cloud development environment with VS Code interface, terminal with rich output, and Claude Labs running successfully*
+*Complete Gitpod workspace showing the cloud development environment with VS Code interface and Claude Labs Chat Interface, demonstrating real-time conversation capabilities*
 
 ## 🌐 **URL Input Demo**
 
