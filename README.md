@@ -174,7 +174,7 @@ hello-claude/
 ├── document.txt        # Sample document for testing
 ├── venv/               # Virtual environment (created during setup)
 ├── .gitignore          # Prevents accidental commits of secrets
-└── LICENSE             # MIT License for maximum freedom
+└── LICENSE             # Apache License 2.0 for maximum freedom
 ```
 
 ## 🛠️ Development Commands
@@ -258,7 +258,7 @@ This is a demo project designed to showcase excellent DX. Feel free to:
 
 ## 📄 License
 
-MIT License - feel free to use this code in your own projects!
+Apache License 2.0 - feel free to use this code in your own projects!
 
 ---
 
