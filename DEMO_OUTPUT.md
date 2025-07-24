@@ -2,7 +2,7 @@
 
 > **What the Hello Claude Demo looks like with a working API key**
 
-## 🚀 **Replit Demo (One-Click Experience!)**
+## 🚀 **Replit Demo (Easiest - One-Click Experience!)**
 
 ### **Setup Process:**
 ```
@@ -45,7 +45,7 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 **💡 Note:** This screenshot shows the actual Replit interface with the demo working. See [assets/replit-screenshots/README.md](assets/replit-screenshots/README.md) for detailed screenshot guidelines.
 
-## 🌐 **URL Input Demo (Easiest!)**
+## 🌐 **URL Input Demo**
 
 ### **Input:**
 ```bash
