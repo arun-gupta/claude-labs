@@ -149,23 +149,7 @@ echo "Your text here" | python main.py
 
 ## 📊 Expected Output
 
-```
-📊 Original text (89 characters):
---------------------------------------------------
-This is a long text that needs to be summarized into a concise version that captures the key points and main ideas.
---------------------------------------------------
-
-🤖 Summarizing with Claude...
-
-✨ Summary:
-==================================================
-This text discusses the need to condense lengthy content into a brief summary that maintains the essential information and core concepts.
-==================================================
-📈 Summary length: 127 characters
-📉 Compression ratio: 142.7%
-```
-
-**💡 For detailed examples with screenshots, see [DEMO_OUTPUT.md](DEMO_OUTPUT.md)**
+**💡 See [DEMO_OUTPUT.md](DEMO_OUTPUT.md) for detailed examples with screenshots, different input methods, and real output samples.**
 
 ## 🔧 Troubleshooting
 
