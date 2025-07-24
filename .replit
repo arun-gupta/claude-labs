@@ -1,2 +1,2 @@
 language = "python3"
-run = "pip install -r requirements.txt && python main.py --url https://www.anthropic.com/news/introducing-claude" 
+run = "pip install -r requirements.txt && streamlit run app.py --server.port 8501 --server.address 0.0.0.0" 

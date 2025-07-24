@@ -179,13 +179,14 @@ This project is configured for multiple cloud development platforms!
 **On Replit:**
 1. **Import**: Click "Import code or design" → "GitHub" → Paste repository URL
 2. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
-3. **Run**: Click the Run button to launch the web app instantly
+3. **Run**: Click the Run button to launch the web app
+4. **Access Web App**: The web app opens automatically in the **Webview** tab above the terminal
 
 **Features:**
 - ✅ **Auto-install**: Dependencies installed automatically
 - ✅ **Environment**: Python 3.9 with all required packages
 - ✅ **Secrets**: Secure API key management
-- ✅ **One-click web app**: Beautiful Streamlit interface launches instantly
+- ✅ **Webview Integration**: Web app opens automatically in Replit's Webview tab
 
 ### ⚡ **Gitpod Integration**
 
