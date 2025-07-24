@@ -17,7 +17,13 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 ## 🚀 Quick Start (5 minutes or less!)
 
 ### 🌐 Option 1: Try on Replit (Easiest!)
-[![Run on Replit](https://img.shields.io/badge/Replit-0D1117?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/arun-gupta/hello-claude)
+<div align="center">
+
+<a href="https://replit.com/github/arun-gupta/hello-claude" target="_blank">
+<img src="https://img.shields.io/badge/Replit-0D1117?style=for-the-badge&logo=replit&logoColor=white" alt="Run on Replit" style="border: 3px solid #00D4FF; border-radius: 8px; padding: 8px; background: linear-gradient(45deg, #667eea 0%, #764ba2 100%); box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);" />
+</a>
+
+</div>
 
 1. Click the "Run on Replit" button above
 2. Set your API key in Replit Secrets (Tools → Secrets)
