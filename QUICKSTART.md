@@ -54,6 +54,16 @@ source venv/bin/activate
 python test_setup.py
 ```
 
+## 🔑 Set API Key (if needed)
+
+```bash
+# Set API key manually (recommended)
+export ANTHROPIC_API_KEY='your-api-key-here'
+
+# Or use the setup script
+./setup.sh
+```
+
 ## 🎬 Run Demo
 
 ```bash

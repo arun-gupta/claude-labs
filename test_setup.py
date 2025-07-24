@@ -51,11 +51,20 @@ def test_api_connection():
     try:
         import anthropic
         api_key = os.getenv('ANTHROPIC_API_KEY')
+        
+        # Debug: Check if API key is actually set
+        if not api_key:
+            print("❌ API key is not set in environment variables")
+            print("💡 Set it with: export ANTHROPIC_API_KEY='your-key-here'")
+            return False
+        
+        print(f"🔑 Using API key: {api_key[:10]}...{api_key[-4:]}")
+        
         client = anthropic.Anthropic(api_key=api_key)
         
         # Simple test call
         response = client.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-haiku-20240307",
             max_tokens=50,
             messages=[{"role": "user", "content": "Say 'Hello from Claude!' and nothing else."}]
         )
@@ -67,6 +76,7 @@ def test_api_connection():
             return True
         else:
             print("❌ Unexpected response from Claude")
+            print(f"🤖 Received: {result}")
             return False
             
     except Exception as e:
@@ -75,6 +85,11 @@ def test_api_connection():
         print("- Check your internet connection")
         print("- Verify your API key is correct")
         print("- Ensure you have API credits available")
+        print("- Make sure your API key starts with 'sk-ant-'")
+        print("\n🔧 Quick fixes:")
+        print("1. Get a new API key from: https://console.anthropic.com/")
+        print("2. Set it: export ANTHROPIC_API_KEY='your-new-key'")
+        print("3. Test again: python test_setup.py")
         return False
 
 def main():

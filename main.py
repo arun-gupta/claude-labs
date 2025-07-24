@@ -100,7 +100,7 @@ Text to summarize:
 Summary:"""
         
         response = client.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-haiku-20240307",
             max_tokens=1000,
             temperature=0.3,  # Lower temperature for more focused summaries
             messages=[{"role": "user", "content": prompt}]

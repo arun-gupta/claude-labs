@@ -30,6 +30,11 @@ The setup script will:
 - ✅ Help you set up the API key securely
 - ✅ Test your setup automatically
 
+**API Key Options:**
+- **Session Only**: Set for current terminal session (temporary)
+- **Permanent**: Save to shell config file (persistent)
+- **Skip**: Set up later using `./set_api_key.sh`
+
 ### Option 2: Manual Setup
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
@@ -66,6 +71,8 @@ make demo
    ```bash
    export ANTHROPIC_API_KEY='your-api-key-here'
    ```
+
+**💡 Important**: You need a valid API key with credits to use the demo. See [DEMO_OUTPUT.md](DEMO_OUTPUT.md) for examples of what the output looks like.
 
 ## 📖 Usage Examples
 
@@ -176,6 +183,18 @@ make clean      # Clean up Python cache files
 ### Using Setup Script
 ```bash
 ./setup.sh      # Automated setup with virtual environment
+```
+
+### API Key Management
+```bash
+# Option 1: Run script (API key only available in script)
+./set_api_key.sh
+
+# Option 2: Set manually (recommended)
+export ANTHROPIC_API_KEY='your-api-key-here'
+
+# Option 3: Use setup script with interactive API key setup
+./setup.sh
 ```
 
 ### Manual Commands
