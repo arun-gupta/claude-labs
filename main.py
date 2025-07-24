@@ -29,6 +29,9 @@ from rich.table import Table
 from rich.syntax import Syntax
 from rich import print as rprint
 
+# Monitoring imports
+from monitoring import monitor, error_tracker, monitor_request
+
 # Initialize rich console
 console = Console()
 
@@ -225,7 +228,8 @@ def read_url_content(url: str) -> str:
         sys.exit(1)
 
 
-def summarize_text(text: str, api_key: str) -> str:
+@monitor_request
+def summarize_text(text: str, api_key: str, model: str = "claude-3-5-haiku-20241022") -> str:
     """
     Summarize text using Claude API with comprehensive error handling.
     
@@ -260,7 +264,7 @@ Text to summarize:
 Summary:"""
             
             response = client.messages.create(
-                model="claude-3-haiku-20240307",
+                model=model,
                 max_tokens=1000,
                 temperature=0.3,  # Lower temperature for more focused summaries
                 messages=[{"role": "user", "content": prompt}]
@@ -344,8 +348,26 @@ Examples:
         '--url', '-u',
         help='Fetch text from URL instead of command line argument'
     )
+    parser.add_argument(
+        '--analytics', '-a',
+        action='store_true',
+        help='Display usage analytics and monitoring data'
+    )
+    parser.add_argument(
+        '--export-analytics',
+        help='Export analytics to JSON file'
+    )
     
     args = parser.parse_args()
+    
+    # Handle analytics-only mode
+    if args.analytics:
+        monitor.display_analytics()
+        sys.exit(0)
+    
+    if args.export_analytics:
+        monitor.export_analytics(args.export_analytics)
+        sys.exit(0)
     
     # Get input text
     if args.url:
@@ -423,6 +445,10 @@ Examples:
         table.add_row("Characters Saved", f"{len(text) - len(summary):,}")
         
         console.print(table)
+        
+        # Show analytics if requested
+        if monitor.get_analytics().total_requests > 1:
+            console.print("\n[dim]💡 Run with --analytics to see detailed usage statistics[/dim]")
         
     except KeyboardInterrupt:
         console.print(Panel(

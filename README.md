@@ -228,6 +228,34 @@ This project is configured for multiple cloud development platforms!
 - ✅ **Free Tier**: Generous free usage for development and testing
 - ✅ **Auto-activation**: Virtual environment automatically activated
 
+## 📊 **Priority 3: Monitoring & Analytics**
+
+### **Analytics Dashboard:**
+```bash
+# View comprehensive analytics
+python analytics.py
+
+# Or use main.py with analytics flag
+python main.py --analytics
+
+# Export analytics to JSON
+python main.py --export-analytics claude_analytics.json
+```
+
+### **Monitoring Features:**
+- **📈 Real-time Metrics** - Token usage, response times, costs
+- **🔍 Error Analysis** - Detailed error tracking with suggestions
+- **⚡ Rate Limiting** - Intelligent retry logic and backoff
+- **📊 Usage Analytics** - Model usage, success rates, performance insights
+- **📝 Detailed Logging** - Complete request/response logs in `claude_labs.log`
+
+### **Error Tracking:**
+The system now provides intelligent error analysis with specific suggestions for:
+- **Authentication errors** - API key issues and solutions
+- **Rate limiting** - Wait times and optimization tips
+- **Model errors** - Correct model names and usage
+- **Network issues** - Connection troubleshooting
+
 ## 📖 Usage Examples
 
 ### 🌐 URL Input (Recommended!)
@@ -474,6 +502,15 @@ We're planning to enhance this lab with even better developer experience. Here's
 
 **🎉 Summary:** Transformed basic CLI into a beautiful, interactive experience with Rich library - featuring colorful panels, progress bars, formatted tables, and enhanced error handling for immediate developer delight.
 
+### **📊 Priority 3: Monitoring & Debugging** ✅
+- [x] **Request/response logging** with detailed timestamps
+- [x] **Performance metrics** (token usage, response time, cost tracking)
+- [x] **Error tracking** with detailed stack traces and suggestions
+- [x] **Rate limiting** and intelligent retry logic
+- [x] **Usage analytics** dashboard
+
+**🎉 Summary:** Implemented comprehensive production monitoring with detailed logging, performance metrics, intelligent error tracking, rate limiting, and analytics dashboard - providing full visibility into Claude API usage and system health.
+
 ### **🔧 Priority 2: Developer Tools & Quality**
 - [ ] **Pre-commit hooks** for automated code quality checks
 - [ ] **Type checking** with mypy for better code safety
@@ -481,12 +518,12 @@ We're planning to enhance this lab with even better developer experience. Here's
 - [ ] **Advanced linting** with ruff for comprehensive code analysis
 - [ ] **Code coverage** reporting with pytest-cov
 
-### **📊 Priority 3: Monitoring & Debugging**
-- [ ] **Request/response logging** with detailed timestamps
-- [ ] **Performance metrics** (token usage, response time, cost tracking)
-- [ ] **Error tracking** with detailed stack traces and suggestions
-- [ ] **Rate limiting** and intelligent retry logic
-- [ ] **Usage analytics** dashboard
+### **📊 Priority 3: Monitoring & Debugging** ✅
+- [x] **Request/response logging** with detailed timestamps
+- [x] **Performance metrics** (token usage, response time, cost tracking)
+- [x] **Error tracking** with detailed stack traces and suggestions
+- [x] **Rate limiting** and intelligent retry logic
+- [x] **Usage analytics** dashboard
 
 ### **🧪 Priority 4: Testing & Reliability**
 - [ ] **Unit tests** with pytest for core functionality
