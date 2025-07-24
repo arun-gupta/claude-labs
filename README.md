@@ -30,7 +30,7 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 1. Click the "Open Replit" button above
 2. Click **"Import code or design"** → **"GitHub"**
 3. Paste the URL above: `https://github.com/arun-gupta/hello-claude`
-4. Set your API key in Replit Secrets (Tools → Secrets)
+4. Set your API key: **Tools** → **Secrets** (scroll down to find it)
 5. Click "Run" to test the demo!
 
 ### 💻 Option 2: Automated Setup (Local)
@@ -97,7 +97,7 @@ This project is fully configured for Replit!
 
 ### **On Replit:**
 1. **Import**: Click "Import code or design" → "GitHub" → Paste repository URL
-2. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
+2. **Set API Key**: Go to Tools → Secrets (scroll down) → Add `ANTHROPIC_API_KEY`
 3. **Run**: Click the Run button to test with the Anthropic article
 4. **Customize**: Modify the `.replit` file to change the default command
 

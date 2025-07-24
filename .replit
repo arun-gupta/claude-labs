@@ -2,9 +2,6 @@ language = "python3"
 run = "python main.py --url https://www.anthropic.com/news/introducing-claude"
 entrypoint = "main.py"
 
-[nix]
-channel = "stable-23_11"
-
 [env]
 PYTHONPATH = "${PYTHONPATH}:/home/runner/${REPL_SLUG}"
 
