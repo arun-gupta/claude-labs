@@ -2,7 +2,7 @@
 # This file configures the Gitpod workspace for optimal development experience
 
 # Use Python 3.9 image for consistency with other platforms
-image: gitpod/workspace-python:3.9
+image: gitpod/workspace-full:latest
 
 # Install system dependencies
 tasks:
