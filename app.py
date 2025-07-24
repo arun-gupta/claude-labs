@@ -8,7 +8,7 @@ from datetime import datetime
 
 # Page configuration
 st.set_page_config(
-    page_title="Hello Claude Demo",
+    page_title="Claude Labs",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -129,8 +129,8 @@ def chat_with_claude(message: str, client: anthropic.Anthropic, model: str = "cl
         return None
 
 # Main header
-st.markdown('<h1 class="main-header">🤖 Hello Claude Demo</h1>', unsafe_allow_html=True)
-st.markdown("### Lightning-fast AI interactions with Claude API")
+st.markdown('<h1 class="main-header">🤖 Claude Labs</h1>', unsafe_allow_html=True)
+st.markdown("### Comprehensive Claude API showcase with interactive interface")
 
 # Sidebar for configuration
 with st.sidebar:

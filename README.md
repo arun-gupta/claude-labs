@@ -1,8 +1,8 @@
-# Hello Claude Demo 🚀
+# Claude Labs 🚀
 
-> **Lightning-fast text summarization with Claude API** - Get started in under 5 minutes!
+> **Comprehensive Claude API showcase with interactive web interface** - Get started in under 5 minutes!
 
-A clean, elegant demonstration of Claude's text summarization capabilities designed for immediate developer delight. This demo showcases how to build practical GenAI applications with minimal setup and maximum clarity.
+A comprehensive showcase of Claude's capabilities designed for immediate developer delight. This lab demonstrates how to build practical GenAI applications with minimal setup and maximum clarity, featuring interactive web interface, multiple input methods, and real-world use cases.
 
 ## ✨ Features
 
@@ -433,7 +433,7 @@ python demo.py
 
 ## 🎯 Key Design Principles
 
-This demo exemplifies excellent Developer Experience (DX) inspired by Claude's clarity and ease:
+This lab exemplifies excellent Developer Experience (DX) inspired by Claude's clarity and ease:
 
 - **One-Click Deployment** - Replit integration for instant cloud execution
 - **Zero Setup Friction** - Works immediately with minimal configuration
@@ -459,7 +459,7 @@ This demo exemplifies excellent Developer Experience (DX) inspired by Claude's c
 
 ## 🚀 Future Improvements (Claude-Style DX)
 
-We're planning to enhance this demo with even better developer experience. Here's our roadmap:
+We're planning to enhance this lab with even better developer experience. Here's our roadmap:
 
 ### **🎯 Priority 1: Enhanced CLI & User Experience** ✅
 - [x] **Rich terminal output** with colors, progress bars, and emojis
@@ -530,7 +530,7 @@ We're planning to enhance this demo with even better developer experience. Here'
 
 ## 🤝 Contributing
 
-This is a demo project designed to showcase excellent DX. Feel free to:
+This is a lab project designed to showcase excellent DX. Feel free to:
 - Fork and modify for your own projects
 - Submit issues for improvements
 - Share with your team as a reference for good practices

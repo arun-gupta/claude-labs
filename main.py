@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Hello Claude Demo - Text Summarization with Claude API
+Claude Labs - Comprehensive Claude API Showcase
 
-A simple, elegant demonstration of Claude's text summarization capabilities.
+A comprehensive demonstration of Claude's capabilities including text summarization, chat, and document processing.
 Designed for lightning-fast onboarding and immediate developer delight.
 
 Usage:
@@ -320,7 +320,7 @@ Summary:"""
 def main():
     """Main function with argument parsing and user-friendly output."""
     parser = argparse.ArgumentParser(
-        description="Hello Claude Demo - Text Summarization",
+        description="Claude Labs - Comprehensive Claude API Showcase",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
