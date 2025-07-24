@@ -293,9 +293,16 @@ with tab3:
     st.header("🌐 URL Processing")
     st.markdown("Enter a URL and let Claude fetch and summarize the content.")
     
+    # Demo button to auto-fill the default URL
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        if st.button("🎯 Try Demo URL", type="secondary"):
+            st.session_state.demo_url = "https://www.anthropic.com/news/introducing-claude"
+    
     url = st.text_input(
         "Enter URL:",
-        placeholder="https://example.com/article",
+        value=st.session_state.get("demo_url", ""),
+        placeholder="https://www.anthropic.com/news/introducing-claude",
         help="Enter any web URL to fetch and summarize"
     )
     
