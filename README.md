@@ -282,11 +282,7 @@ This demo exemplifies excellent Developer Experience (DX) inspired by Claude's c
 - [Python Anthropic Library](https://github.com/anthropics/anthropic-sdk-python)
 - [Python Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
 
-## 🚀 Try It Live!
 
-[![Run on Replit](https://replit.com/badge/github/yourusername/hello-claude)](https://replit.com/github/yourusername/hello-claude)
-
-Click the badge above to try this demo instantly in your browser - no setup required!
 
 ## 🤝 Contributing
 
