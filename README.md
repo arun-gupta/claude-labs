@@ -191,7 +191,7 @@ This project is configured for multiple cloud development platforms!
 
 **On Replit:**
 1. **Click**: The "Open in Replit" button above
-2. **Create**: Click "Create Repl" (one-click setup!)
+2. **Import**: Click "Import from GitHub" (one-click setup!)
 3. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
 4. **Run**: Click the Run button to launch the web app
 5. **Access Web App**: The web app opens automatically in the **Webview** tab above the terminal
