@@ -16,46 +16,14 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ## 🚀 Quick Start (5 minutes or less!)
 
-### 🌐 Option 1: Try on Replit (Easiest!)
-<div align="center">
-
-<a href="https://replit.com" target="_blank">
-<img src="https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF" alt="Open Replit" />
-</a>
-
-</div>
-
-**📋 Copy this URL:** `https://github.com/arun-gupta/hello-claude`
-
-1. Click the "Open Replit" button above
-2. Click **"Import code or design"** → **"GitHub"**
-3. Paste the URL above: `https://github.com/arun-gupta/hello-claude`
-4. Set your API key: **Tools** → **Secrets** (scroll down to find it)
-5. Click "Run" to test the demo!
-
-### ☁️ Option 1b: Try on GitHub Codespaces (Full IDE!)
-<div align="center">
-
-<a href="https://github.com/features/codespaces" target="_blank">
-<img src="https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717" alt="Open GitHub Codespaces" />
-</a>
-
-</div>
-
-1. Go to [GitHub Codespaces](https://github.com/codespaces)
-2. Click **"New codespace"** (green button)
-3. **Select Repository**: Choose "arun-gupta/hello-claude" from dropdown
-4. **Configure**: Select branch, region, and machine type (defaults work fine)
-5. Click **"Create codespace"** button
-6. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-key-here'`
-7. **Run**: `python main.py --url https://www.anthropic.com/news/introducing-claude`
-
-### 💻 Option 2: Automated Setup (Local)
+### 💻 Option 1: Automated Setup (Local)
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
 ./setup.sh
 ```
+
+> 💡 **Want to try in the cloud?** See [Cloud Platform Integrations](#-cloud-platform-integrations) below for Replit and GitHub Codespaces options!
 
 The setup script will:
 - ✅ Create a virtual environment
