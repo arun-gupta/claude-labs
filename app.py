@@ -90,7 +90,7 @@ def fetch_url_content(url: str) -> Optional[str]:
         st.error(f"❌ Error fetching URL: {str(e)}")
         return None
 
-def summarize_text(text: str, client: anthropic.Anthropic, model: str = "claude-3-5-sonnet-20241022") -> Optional[str]:
+def summarize_text(text: str, client: anthropic.Anthropic, model: str = "claude-3-5-haiku-20241022") -> Optional[str]:
     """Summarize text using Claude"""
     try:
         with st.spinner("🤖 Claude is thinking..."):
@@ -109,7 +109,7 @@ def summarize_text(text: str, client: anthropic.Anthropic, model: str = "claude-
         st.error(f"❌ Error calling Claude API: {str(e)}")
         return None
 
-def chat_with_claude(message: str, client: anthropic.Anthropic, model: str = "claude-3-5-sonnet-20241022") -> Optional[str]:
+def chat_with_claude(message: str, client: anthropic.Anthropic, model: str = "claude-3-5-haiku-20241022") -> Optional[str]:
     """Chat with Claude"""
     try:
         with st.spinner("🤖 Claude is responding..."):
@@ -152,11 +152,11 @@ with st.sidebar:
     model = st.selectbox(
         "Choose Claude model:",
         [
-            "claude-3-5-sonnet-20241022",
             "claude-3-5-haiku-20241022",
+            "claude-3-5-sonnet-20241022",
             "claude-3-opus-20240229"
         ],
-        help="Sonnet: Balanced, Haiku: Fast & Cheap, Opus: Most Capable"
+        help="Haiku: Fast & Cheap (Recommended), Sonnet: Balanced, Opus: Most Capable"
     )
     
     # Features info

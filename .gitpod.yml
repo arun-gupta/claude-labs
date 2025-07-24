@@ -19,7 +19,7 @@ tasks:
       
       echo "🚀 Hello Claude Demo environment is ready!"
       echo "💡 Set your ANTHROPIC_API_KEY: export ANTHROPIC_API_KEY='your-api-key-here'"
-      echo "🎯 Try: python main.py --url https://www.anthropic.com/news/introducing-claude"
+      echo "🎯 Try: ./web.sh (web app opens automatically in browser!)"
     command: |
       echo "✅ Using global Python installation"
       echo "Environment setup complete! You can now run the demo."
