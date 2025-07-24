@@ -118,12 +118,6 @@ python main.py --url https://www.anthropic.com/news/introducing-claude
 
 > 💡 **Try this URL**: Copy/paste the commands above to test with a real article about Claude!
 
-**🎯 Quick Copy-Paste Commands:**
-```bash
-source venv/bin/activate
-python main.py --url https://www.anthropic.com/news/introducing-claude
-```
-
 ### 📄 File Input
 ```bash
 source venv/bin/activate
