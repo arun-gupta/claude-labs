@@ -29,15 +29,21 @@ A comprehensive showcase of Claude's capabilities designed for immediate develop
 - **🔒 Secure** - API keys managed securely by the platform
 
 **☁️ GitHub Codespaces - Full VS Code environment:**
-[![Open in Codespaces](https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717)](https://github.com/codespaces)
+<a href="https://github.com/codespaces/new?template_repository=arun-gupta/claude-labs" target="_blank">
+<img src="https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717" alt="Open in Codespaces" />
+</a>
 ([Detailed setup guide](#️-github-codespaces))
 
 **🚀 Replit - One-click setup:**
-[![Open in Replit](https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF)](https://replit.com)
+<a href="https://replit.com" target="_blank">
+<img src="https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF" alt="Open in Replit" />
+</a>
 ([Detailed setup guide](#-replit-integration))
 
 **⚡ Gitpod - Cloud development environment:**
-[![Open in Gitpod](https://img.shields.io/badge/⚡_Open_Gitpod-FFAE33?style=for-the-badge&logo=gitpod&logoColor=white&labelColor=FFAE33&color=FFAE33)](https://gitpod.io/#https://github.com/arun-gupta/hello-claude)
+<a href="https://gitpod.io/#https://github.com/arun-gupta/claude-labs" target="_blank">
+<img src="https://img.shields.io/badge/⚡_Open_Gitpod-FFAE33?style=for-the-badge&logo=gitpod&logoColor=white&labelColor=FFAE33&color=FFAE33" alt="Open in Gitpod" />
+</a>
 ([Detailed setup guide](#-gitpod-integration))
 
 > 💡 **Why cloud platforms?** Zero setup, instant access, pre-configured environment, and you can start coding immediately!
@@ -152,7 +158,7 @@ This project is configured for multiple cloud development platforms!
 
 <div align="center">
 
-<a href="https://github.com/features/codespaces" target="_blank">
+<a href="https://github.com/codespaces/new?template_repository=arun-gupta/claude-labs" target="_blank">
 <img src="https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717" alt="Open GitHub Codespaces" />
 </a>
 
