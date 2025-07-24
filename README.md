@@ -48,6 +48,14 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 4. Set your API key: Terminal → `export ANTHROPIC_API_KEY='your-key-here'`
 5. Run: `python main.py --file samples/document.txt`
 
+**Alternative Method (New Interface):**
+1. Go to [GitHub Codespaces](https://github.com/codespaces)
+2. Click **"New codespace"** (green button)
+3. Select **"Blank"** template
+4. Click **"Use this template"**
+5. Once loaded, clone the repo: `git clone https://github.com/arun-gupta/hello-claude.git`
+6. Open the project folder and follow steps 4-5 above
+
 ### 💻 Option 2: Automated Setup (Local)
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
@@ -141,10 +149,16 @@ This project is configured for multiple cloud development platforms!
 
 </div>
 
-**On GitHub Codespaces:**
+**Method 1 - From Repository:**
 1. **Open**: Click the "Code" button → "Codespaces" → "Create codespace"
 2. **Set API Key**: Add `ANTHROPIC_API_KEY` to environment variables
 3. **Run**: Execute commands in the integrated terminal
+
+**Method 2 - From Codespaces Dashboard:**
+1. **Go to**: [GitHub Codespaces](https://github.com/codespaces)
+2. **Create**: Click "New codespace" → Select "Blank" template
+3. **Clone**: `git clone https://github.com/arun-gupta/hello-claude.git`
+4. **Setup**: Set API key and run commands
 
 **Features:**
 - ✅ **Full VS Code**: Complete development environment
@@ -232,6 +246,12 @@ source venv/bin/activate
 python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 Copy only the lines without `#` at the beginning.
+
+### ❌ "Can't find Codespaces button" or "Codespaces not working"
+**Solution:** GitHub Codespaces interface has changed! Try these methods:
+1. **From repository**: Click "Code" → "Codespaces" → "Create codespace"
+2. **From dashboard**: Go to [github.com/codespaces](https://github.com/codespaces) → "New codespace" → "Blank" template
+3. **Alternative**: Use Replit integration instead
 
 ## 🏗️ Project Structure
 
