@@ -17,22 +17,11 @@ tasks:
       # Install development tools
       pip install black flake8 isort pylint
       
-      # Set up pre-commit hooks (optional)
-      # pip install pre-commit
-      # pre-commit install
-      
       echo "🚀 Hello Claude Demo environment is ready!"
       echo "💡 Set your ANTHROPIC_API_KEY: export ANTHROPIC_API_KEY='your-api-key-here'"
       echo "🎯 Try: python main.py --url https://www.anthropic.com/news/introducing-claude"
     command: |
-      # Activate virtual environment if it exists, otherwise use global installation
-      if [ -f ".venv/bin/activate" ]; then
-        source .venv/bin/activate
-        echo "✅ Virtual environment activated"
-      else
-        echo "✅ Using global Python installation"
-      fi
-      
+      echo "✅ Using global Python installation"
       echo "Environment setup complete! You can now run the demo."
       echo "Remember to set your ANTHROPIC_API_KEY environment variable."
 
@@ -48,17 +37,6 @@ vscode:
     - redhat.vscode-yaml
     - ms-vscode.makefile-tools
     - ms-vscode.vscode-markdownlint
-    - bradlc.vscode-tailwindcss
-    - esbenp.prettier-vscode
-
-# Configure workspace settings
-workspaceLocation: "."
-
-# Port configuration (if needed for web interfaces in the future)
-ports:
-  - port: 8000
-    onOpen: ignore
-    visibility: public
 
 # Environment variables (users will need to set ANTHROPIC_API_KEY)
 env:
@@ -68,16 +46,4 @@ env:
 # Configure Git
 gitConfig:
   user.email: "gitpod@example.com"
-  user.name: "Gitpod User"
-
-# Post-create commands
-postCreateCommand: |
-  echo "🎉 Welcome to Hello Claude Demo on Gitpod!"
-  echo ""
-  echo "📋 Next steps:"
-  echo "1. Set your API key: export ANTHROPIC_API_KEY='your-api-key-here'"
-  echo "2. Try the demo: python main.py --url https://www.anthropic.com/news/introducing-claude"
-  echo "3. Explore the code in the editor"
-  echo ""
-  echo "💡 Tip: Dependencies are installed globally for easy access!"
-  echo "💡 If you prefer a virtual environment, run: python3 -m venv .venv && source .venv/bin/activate" 
+  user.name: "Gitpod User" 
