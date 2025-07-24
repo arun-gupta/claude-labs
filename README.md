@@ -121,12 +121,12 @@ python main.py --url https://www.anthropic.com/news/introducing-claude
 ### 📄 File Input
 ```bash
 source venv/bin/activate
-python main.py --file document.txt
+python main.py --file samples/document.txt
 ```
 
 > 💡 **Try these sample files**: 
-> - `document.txt` - Comprehensive AI article (2,500+ characters)
-> - `sample.txt` - Shorter AI overview (1,000+ characters)
+> - `samples/document.txt` - Comprehensive AI article (2,500+ characters)
+> - `samples/sample.txt` - Shorter AI overview (1,000+ characters)
 
 ### 📝 Command Line Input
 ```bash
@@ -216,8 +216,9 @@ hello-claude/
 ├── test_setup.py       # Setup verification script
 ├── demo.py             # Showcase script with predefined example
 ├── Makefile            # Development workflow commands
-├── sample.txt          # Sample text for testing (1,000+ chars)
-├── document.txt        # Sample document for testing (2,500+ chars)
+├── samples/            # Test documents and sample files
+│   ├── document.txt    # Comprehensive AI article (2,500+ chars)
+│   └── sample.txt      # Shorter AI overview (1,000+ chars)
 ├── .replit             # Replit configuration
 ├── pyproject.toml      # Modern Python packaging
 
