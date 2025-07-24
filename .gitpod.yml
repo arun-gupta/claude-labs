@@ -1,0 +1,83 @@
+# Gitpod configuration for Hello Claude Demo
+# This file configures the Gitpod workspace for optimal development experience
+
+# Use Python 3.9 image for consistency with other platforms
+image: gitpod/workspace-python:3.9
+
+# Install system dependencies
+tasks:
+  - name: Setup Python Environment
+    init: |
+      # Upgrade pip
+      pip install --upgrade pip
+      
+      # Install project dependencies globally (easier for Gitpod)
+      pip install -r requirements.txt
+      
+      # Install development tools
+      pip install black flake8 isort pylint
+      
+      # Set up pre-commit hooks (optional)
+      # pip install pre-commit
+      # pre-commit install
+      
+      echo "🚀 Hello Claude Demo environment is ready!"
+      echo "💡 Set your ANTHROPIC_API_KEY: export ANTHROPIC_API_KEY='your-api-key-here'"
+      echo "🎯 Try: python main.py --url https://www.anthropic.com/news/introducing-claude"
+    command: |
+      # Activate virtual environment if it exists, otherwise use global installation
+      if [ -f ".venv/bin/activate" ]; then
+        source .venv/bin/activate
+        echo "✅ Virtual environment activated"
+      else
+        echo "✅ Using global Python installation"
+      fi
+      
+      echo "Environment setup complete! You can now run the demo."
+      echo "Remember to set your ANTHROPIC_API_KEY environment variable."
+
+# Configure VS Code extensions for better development experience
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-python.black-formatter
+    - ms-python.flake8
+    - ms-python.isort
+    - ms-python.pylint
+    - ms-vscode.vscode-json
+    - redhat.vscode-yaml
+    - ms-vscode.makefile-tools
+    - ms-vscode.vscode-markdownlint
+    - bradlc.vscode-tailwindcss
+    - esbenp.prettier-vscode
+
+# Configure workspace settings
+workspaceLocation: "."
+
+# Port configuration (if needed for web interfaces in the future)
+ports:
+  - port: 8000
+    onOpen: ignore
+    visibility: public
+
+# Environment variables (users will need to set ANTHROPIC_API_KEY)
+env:
+  PYTHONPATH: "${GITPOD_REPO_ROOT}"
+  PYTHONUNBUFFERED: "1"
+
+# Configure Git
+gitConfig:
+  user.email: "gitpod@example.com"
+  user.name: "Gitpod User"
+
+# Post-create commands
+postCreateCommand: |
+  echo "🎉 Welcome to Hello Claude Demo on Gitpod!"
+  echo ""
+  echo "📋 Next steps:"
+  echo "1. Set your API key: export ANTHROPIC_API_KEY='your-api-key-here'"
+  echo "2. Try the demo: python main.py --url https://www.anthropic.com/news/introducing-claude"
+  echo "3. Explore the code in the editor"
+  echo ""
+  echo "💡 Tip: Dependencies are installed globally for easy access!"
+  echo "💡 If you prefer a virtual environment, run: python3 -m venv .venv && source .venv/bin/activate" 

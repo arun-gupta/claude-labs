@@ -26,6 +26,10 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 [![Open in Codespaces](https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717)](https://github.com/codespaces)
 ([Detailed setup guide](#️-github-codespaces))
 
+**⚡ Gitpod - Cloud development environment:**
+[![Open in Gitpod](https://img.shields.io/badge/⚡_Open_Gitpod-FFAE33?style=for-the-badge&logo=gitpod&logoColor=white&labelColor=FFAE33&color=FFAE33)](https://gitpod.io/#https://github.com/arun-gupta/hello-claude)
+([Detailed setup guide](#-gitpod-integration))
+
 > 💡 **Why cloud platforms?** Zero setup, instant access, pre-configured environment, and you can start coding immediately!
 
 ### 💻 Option 2: Automated Setup (Local)
@@ -92,6 +96,10 @@ make demo
 - In the terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
 - Or add to environment variables in VS Code settings
 
+#### **⚡ Gitpod:**
+- In the terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
+- Or add to workspace environment variables in Gitpod settings
+
 #### **💻 Local Development:**
 - **Session only**: `export ANTHROPIC_API_KEY='your-api-key-here'`
 - **Permanent**: Add to `~/.bashrc` or `~/.zshrc`
@@ -146,6 +154,30 @@ This project is configured for multiple cloud development platforms!
 - ✅ **Environment Variables**: Easy API key management
 - ✅ **Extensions**: Rich ecosystem of development tools
 - ✅ **Auto-setup**: Dependencies installed automatically
+
+### ⚡ **Gitpod Integration**
+
+<div align="center">
+
+<a href="https://gitpod.io/#https://github.com/arun-gupta/hello-claude" target="_blank">
+<img src="https://img.shields.io/badge/⚡_Open_Gitpod-FFAE33?style=for-the-badge&logo=gitpod&logoColor=white&labelColor=FFAE33&color=FFAE33" alt="Open in Gitpod" />
+</a>
+
+</div>
+
+**On Gitpod:**
+1. **Click**: The "Open in Gitpod" button above
+2. **Wait**: Gitpod will automatically set up the environment
+3. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
+4. **Run**: `python main.py --url https://www.anthropic.com/news/introducing-claude`
+
+**Features:**
+- ✅ **Instant Setup**: Pre-configured Python environment with all dependencies
+- ✅ **VS Code Experience**: Full IDE with extensions and debugging
+- ✅ **Development Tools**: Black, Flake8, isort, and Pylint pre-installed
+- ✅ **Git Integration**: Direct access to repository and version control
+- ✅ **Free Tier**: Generous free usage for development and testing
+- ✅ **Auto-activation**: Virtual environment automatically activated
 
 ## 📖 Usage Examples
 
@@ -253,6 +285,7 @@ hello-claude/
 ├── .replit             # Replit configuration
 ├── .devcontainer/      # GitHub Codespaces configuration
 │   └── devcontainer.json
+├── .gitpod.yml         # Gitpod configuration
 ├── pyproject.toml      # Modern Python packaging
 
 ├── replit-setup.sh     # Replit-specific setup script
