@@ -70,12 +70,12 @@ Looking forward, AI and ML will continue rapid evolution across healthcare, educ
 
 ### **Input:**
 ```bash
-python main.py --url https://example.com/article
+python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 
 ### **Expected Output:**
 ```
-🌐 Fetching content from: https://example.com/article
+🌐 Fetching content from: https://www.anthropic.com/news/introducing-claude
 ✅ Successfully fetched 2847 characters
 
 📊 Original text (2847 characters):

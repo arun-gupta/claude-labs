@@ -94,8 +94,10 @@ python main.py --file document.txt
 ### URL Input
 ```bash
 source venv/bin/activate
-python main.py --url https://example.com/article
+python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
+
+> 💡 **Try this URL**: Copy/paste the command above to test with a real article about Claude!
 
 ### Interactive Mode
 ```bash

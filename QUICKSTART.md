@@ -82,7 +82,7 @@ python main.py --file document.txt
 
 ```bash
 source venv/bin/activate
-python main.py --url https://example.com/article
+python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 
 ## 🛠️ Make Commands
