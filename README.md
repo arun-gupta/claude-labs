@@ -33,6 +33,21 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 4. Set your API key: **Tools** → **Secrets** (scroll down to find it)
 5. Click "Run" to test the demo!
 
+### ☁️ Option 1b: Try on GitHub Codespaces (Full IDE!)
+<div align="center">
+
+<a href="https://github.com/features/codespaces" target="_blank">
+<img src="https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717" alt="Open GitHub Codespaces" />
+</a>
+
+</div>
+
+1. Go to the repository: `https://github.com/arun-gupta/hello-claude`
+2. Click the **"Code"** button → **"Codespaces"** → **"Create codespace"**
+3. Wait for the environment to load (VS Code in browser)
+4. Set your API key: Terminal → `export ANTHROPIC_API_KEY='your-key-here'`
+5. Run: `python main.py --file samples/document.txt`
+
 ### 💻 Option 2: Automated Setup (Local)
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
@@ -91,22 +106,52 @@ make demo
 
 **💡 Important**: You need a valid API key with credits to use the demo.
 
-## 🌐 Replit Integration
+## 🌐 Cloud Platform Integrations
 
-This project is fully configured for Replit! 
+This project is configured for multiple cloud development platforms!
 
-### **On Replit:**
+### 🚀 **Replit Integration**
+
+<div align="center">
+
+<a href="https://replit.com" target="_blank">
+<img src="https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF" alt="Open Replit" />
+</a>
+
+</div>
+
+**On Replit:**
 1. **Import**: Click "Import code or design" → "GitHub" → Paste repository URL
-2. **Set API Key**: Go to Tools → Secrets (scroll down) → Add `ANTHROPIC_API_KEY`
-3. **Run**: Click the Run button to test with the Anthropic article
-4. **Customize**: Modify the `.replit` file to change the default command
+2. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
+3. **Run**: Click the Run button to test instantly
 
-### **Replit Features:**
+**Features:**
 - ✅ **Auto-install**: Dependencies installed automatically
 - ✅ **Environment**: Python 3.9 with all required packages
 - ✅ **Secrets**: Secure API key management
 - ✅ **One-click run**: Pre-configured to test URL input
-- ✅ **Live preview**: See results instantly
+
+### ☁️ **GitHub Codespaces**
+
+<div align="center">
+
+<a href="https://github.com/features/codespaces" target="_blank">
+<img src="https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717" alt="Open GitHub Codespaces" />
+</a>
+
+</div>
+
+**On GitHub Codespaces:**
+1. **Open**: Click the "Code" button → "Codespaces" → "Create codespace"
+2. **Set API Key**: Add `ANTHROPIC_API_KEY` to environment variables
+3. **Run**: Execute commands in the integrated terminal
+
+**Features:**
+- ✅ **Full VS Code**: Complete development environment
+- ✅ **Git Integration**: Direct access to repository
+- ✅ **Environment Variables**: Easy API key management
+- ✅ **Extensions**: Rich ecosystem of development tools
+- ✅ **Auto-setup**: Dependencies installed automatically
 
 ## 📖 Usage Examples
 
@@ -204,6 +249,8 @@ hello-claude/
 │   ├── document.txt    # Comprehensive AI article (2,500+ chars)
 │   └── sample.txt      # Shorter AI overview (1,000+ chars)
 ├── .replit             # Replit configuration
+├── .devcontainer/      # GitHub Codespaces configuration
+│   └── devcontainer.json
 ├── pyproject.toml      # Modern Python packaging
 
 ├── replit-setup.sh     # Replit-specific setup script

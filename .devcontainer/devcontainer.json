@@ -1,0 +1,49 @@
+{
+  "name": "Hello Claude Demo",
+  "image": "mcr.microsoft.com/devcontainers/python:3.9",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.isort",
+        "ms-python.pylint",
+        "ms-vscode.vscode-json",
+        "redhat.vscode-yaml",
+        "ms-vscode.makefile-tools"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.flake8Enabled": true,
+        "python.formatting.provider": "black",
+        "python.formatting.blackArgs": ["--line-length=88"],
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        }
+      }
+    }
+  },
+
+  "postCreateCommand": "pip install --user -r requirements.txt",
+  
+  "remoteUser": "vscode",
+  
+  "mounts": [
+    "source=${localWorkspaceFolder}/.venv,target=/workspaces/.venv,type=bind,consistency=cached"
+  ],
+
+  "forwardPorts": [],
+  
+  "portsAttributes": {},
+  
+  "postStartCommand": "echo '🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: python main.py --file samples/document.txt'"
+} 

@@ -1,0 +1,44 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+.env
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+!README.md
+!DEMO_OUTPUT.md
+
+# Scripts (not needed in container)
+setup.sh
+test_setup.py
+demo.py
+Makefile
+*.bat
+
+# Assets
+assets/
+
+# Replit
+.replit
+replit-setup.sh 
