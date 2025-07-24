@@ -209,7 +209,8 @@ with tab1:
         user_message = st.text_input(
             "Your message:",
             placeholder="Ask Claude anything... (Press Enter to send)",
-            label_visibility="collapsed"
+            label_visibility="collapsed",
+            key="chat_input"
         )
         
         # Subtle submit button (Enter key will trigger this)
@@ -230,11 +231,38 @@ with tab1:
                         "timestamp": datetime.now()
                     })
                     st.rerun()
+    
+    # Usability tip for chat
+    if st.session_state.chat_history:
+        st.info("💡 **Tip:** Click in the chat box below to continue the conversation!")
 
 # Tab 2: File Upload
 with tab2:
     st.header("📄 File Upload & Summarization")
     st.markdown("Upload a text file and let Claude summarize it for you.")
+    
+    # Demo file download
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        demo_file_content = """Artificial Intelligence and Machine Learning: A Comprehensive Overview
+
+Artificial Intelligence (AI) and Machine Learning (ML) have emerged as transformative technologies that are reshaping industries, economies, and societies worldwide. These technologies represent the culmination of decades of research in computer science, mathematics, and cognitive science, bringing us closer to creating systems that can perform tasks traditionally requiring human intelligence.
+
+Machine Learning, a subset of AI, focuses on developing algorithms and statistical models that enable computers to improve their performance on specific tasks through experience. Unlike traditional programming, where explicit instructions are coded, ML systems learn patterns from data and make predictions or decisions based on that learning. This approach has proven particularly effective in areas such as image recognition, natural language processing, recommendation systems, and autonomous vehicles.
+
+The field has seen remarkable progress in recent years, driven by several key factors: the availability of massive datasets, increased computational power, and breakthroughs in neural network architectures. Deep Learning, a specialized form of ML using artificial neural networks with multiple layers, has been particularly influential, achieving state-of-the-art results in numerous domains.
+
+However, the rapid advancement of AI/ML also presents significant challenges and considerations. Issues of bias in training data, privacy concerns, job displacement, and the need for explainable AI systems are among the critical topics that researchers, policymakers, and industry leaders must address. Ensuring that these technologies are developed and deployed responsibly, with appropriate safeguards and ethical considerations, is essential for maximizing their benefits while minimizing potential harms.
+
+Looking forward, AI and ML are expected to continue their rapid evolution, with applications spanning healthcare, education, transportation, finance, and beyond. The key to successful implementation lies in thoughtful design, robust testing, and ongoing collaboration between technologists, domain experts, and stakeholders to ensure these powerful tools serve humanity's best interests."""
+        
+        st.download_button(
+            label="📄 Download Demo File",
+            data=demo_file_content,
+            file_name="ai-ml-overview.txt",
+            mime="text/plain",
+            type="secondary"
+        )
     
     uploaded_file = st.file_uploader(
         "Choose a text file:",
