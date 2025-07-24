@@ -155,10 +155,12 @@ This project is configured for multiple cloud development platforms!
 3. **Configure**: Select branch, region, and machine type (defaults work fine)
 4. **Create**: Click "Create codespace" button
 5. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
-6. **Run**: `python main.py --url https://www.anthropic.com/news/introducing-claude`
+6. **Run**: `./web.sh`
+7. **Access Web App**: Go to **Ports** tab → Click **"Open in Browser"** next to port 8501
 
 **Features:**
 - ✅ **Full VS Code**: Complete development environment
+- ✅ **Port Forwarding**: Web app accessible via Ports tab
 - ✅ **Git Integration**: Direct access to repository
 - ✅ **Environment Variables**: Easy API key management
 - ✅ **Extensions**: Rich ecosystem of development tools
@@ -177,13 +179,13 @@ This project is configured for multiple cloud development platforms!
 **On Replit:**
 1. **Import**: Click "Import code or design" → "GitHub" → Paste repository URL
 2. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
-3. **Run**: Click the Run button to test instantly
+3. **Run**: Click the Run button to launch the web app instantly
 
 **Features:**
 - ✅ **Auto-install**: Dependencies installed automatically
 - ✅ **Environment**: Python 3.9 with all required packages
 - ✅ **Secrets**: Secure API key management
-- ✅ **One-click run**: Pre-configured to test URL input
+- ✅ **One-click web app**: Beautiful Streamlit interface launches instantly
 
 ### ⚡ **Gitpod Integration**
 
@@ -199,10 +201,12 @@ This project is configured for multiple cloud development platforms!
 1. **Click**: The "Open in Gitpod" button above
 2. **Wait**: Gitpod will automatically set up the environment
 3. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
-4. **Run**: `python main.py --url https://www.anthropic.com/news/introducing-claude`
+4. **Run**: `./web.sh`
+5. **Access Web App**: Go to **Ports** tab → Click **"Open in Browser"** next to port 8501
 
 **Features:**
 - ✅ **Instant Setup**: Pre-configured Python environment with all dependencies
+- ✅ **Port Forwarding**: Web app accessible via Ports tab
 - ✅ **VS Code Experience**: Full IDE with extensions and debugging
 - ✅ **Development Tools**: Black, Flake8, isort, and Pylint pre-installed
 - ✅ **Git Integration**: Direct access to repository and version control

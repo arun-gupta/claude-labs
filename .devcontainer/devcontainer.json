@@ -47,7 +47,7 @@
   "portsAttributes": {
     "8501": {
       "label": "Hello Claude Web App",
-      "onAutoForward": "openBrowser",
+      "onAutoForward": "notify",
       "protocol": "http"
     }
   },
