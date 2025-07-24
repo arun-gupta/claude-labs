@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Hello Claude Demo - Web App Launcher
+# Claude Labs - Web App Launcher
 # Simple shell script to launch the Streamlit web interface
 
-echo "🌐 Hello Claude Demo - Web App"
+echo "🌐 Claude Labs - Web App"
 echo "=============================="
 
 # Check if app.py exists

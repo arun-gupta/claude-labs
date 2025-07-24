@@ -1,5 +1,5 @@
 {
-  "name": "Hello Claude Demo",
+  "name": "Claude Labs",
   "image": "mcr.microsoft.com/devcontainers/python:3.9",
   
   "features": {
@@ -46,11 +46,11 @@
   
   "portsAttributes": {
     "8501": {
-      "label": "Hello Claude Web App",
+      "label": "Claude Labs Web App",
       "onAutoForward": "notify",
       "protocol": "http"
     }
   },
   
-  "postStartCommand": "echo '🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: ./web.sh'"
+  "postStartCommand": "echo '🚀 Claude Labs is ready! Set your ANTHROPIC_API_KEY and run: ./web.sh'"
 } 

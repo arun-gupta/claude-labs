@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Test Setup Script for Hello Claude Demo
+Test Setup Script for Claude Labs
 
 Run this script to verify your setup before using the main demo.
 This will check your API key and test a simple Claude API call.
@@ -94,7 +94,7 @@ def test_api_connection():
 
 def main():
     """Run all tests and provide summary."""
-    print("🧪 Hello Claude Demo - Setup Test")
+    print("🧪 Claude Labs - Setup Test")
     print("=" * 40)
     
     tests = [
@@ -125,7 +125,7 @@ def main():
     
     print("\n" + "=" * 40)
     if all_passed:
-        print("🎉 All tests passed! You're ready to use the Hello Claude demo.")
+        print("🎉 All tests passed! You're ready to use Claude Labs.")
         print("\n🚀 Try it out:")
         print("python main.py \"Your text to summarize here\"")
     else:

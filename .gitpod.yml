@@ -1,4 +1,4 @@
-# Gitpod configuration for Hello Claude Demo
+# Gitpod configuration for Claude Labs
 # This file configures the Gitpod workspace for optimal development experience
 
 # Use Python 3.9 image for consistency with other platforms
@@ -17,7 +17,7 @@ tasks:
       # Install development tools
       pip install black flake8 isort pylint
       
-      echo "🚀 Hello Claude Demo environment is ready!"
+      echo "🚀 Claude Labs environment is ready!"
       echo "💡 Set your ANTHROPIC_API_KEY: export ANTHROPIC_API_KEY='your-api-key-here'"
       echo "🎯 Try: ./web.sh (web app opens automatically in browser!)"
     command: |

@@ -1,6 +1,6 @@
 # 🐍 Virtual Environment Guide
 
-> **Why virtual environments matter and how to use them with Hello Claude Demo**
+> **Why virtual environments matter and how to use them with Claude Labs**
 
 ## 🤔 Why Virtual Environments?
 

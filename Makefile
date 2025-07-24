@@ -1,11 +1,11 @@
-# Hello Claude Demo - Makefile
+# Claude Labs - Makefile
 # Common development tasks for easy project management
 
 .PHONY: help install test demo clean setup venv activate
 
 # Default target
 help:
-	@echo "🚀 Hello Claude Demo - Available Commands"
+	@echo "🚀 Claude Labs - Available Commands"
 	@echo "========================================"
 	@echo "make venv       - Create virtual environment"
 	@echo "make activate   - Activate virtual environment"
@@ -67,7 +67,7 @@ demo:
 
 # Launch web app
 web:
-	@echo "🌐 Launching Hello Claude Web App..."
+	@echo "🌐 Launching Claude Labs Web App..."
 	@if [ ! -d "venv" ]; then \
 		echo "❌ Virtual environment not found!"; \
 		echo "💡 Run 'make install' or 'make setup' first"; \

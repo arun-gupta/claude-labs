@@ -1,6 +1,6 @@
 # ⚡ Quick Start Guide
 
-> **Get Hello Claude Demo running in under 2 minutes!**
+> **Get Claude Labs running in under 2 minutes!**
 
 ## 🚀 Super Quick Start
 

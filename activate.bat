@@ -1,8 +1,8 @@
 @echo off
-REM Hello Claude Demo - Windows Virtual Environment Activation
+REM Claude Labs - Windows Virtual Environment Activation
 REM Run this script to activate the virtual environment on Windows
 
-echo 🚀 Hello Claude Demo - Windows Setup
+echo 🚀 Claude Labs - Windows Setup
 echo ====================================
 
 REM Check if virtual environment exists

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hello Claude Demo - Showcase Script
+Claude Labs - Showcase Script
 
 This script demonstrates the text summarization functionality
 with a predefined example. Perfect for demos and testing!
@@ -28,7 +28,7 @@ def run_demo():
     Looking forward, AI and ML are expected to continue their rapid evolution, with applications spanning healthcare, education, transportation, finance, entertainment, and beyond. The key to successful and responsible implementation lies in thoughtful design, robust testing, ongoing collaboration between technologists and domain experts, and the development of appropriate regulatory frameworks to ensure these powerful tools serve humanity's best interests while minimizing potential harms.
     """
     
-    print("🎬 Hello Claude Demo - Live Showcase")
+    print("🎬 Claude Labs - Live Showcase")
     print("=" * 50)
     print("This demo will summarize a comprehensive text about AI and ML.")
     print("=" * 50)

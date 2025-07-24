@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Hello Claude Demo - API Key Setup Script
+# Claude Labs - API Key Setup Script
 # Set your API key for the current session only
 
-echo "🔑 Hello Claude Demo - API Key Setup"
+echo "🔑 Claude Labs - API Key Setup"
 echo "===================================="
 
 # Check if virtual environment exists

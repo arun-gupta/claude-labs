@@ -438,7 +438,7 @@ with tab4:
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666;'>
-    <p>🤖 Hello Claude Demo - Built with Streamlit and Claude API</p>
+    <p>🤖 Claude Labs - Built with Streamlit and Claude API</p>
     <p>Get your API key from <a href='https://console.anthropic.com/' target='_blank'>Anthropic Console</a></p>
 </div>
 """, unsafe_allow_html=True) 

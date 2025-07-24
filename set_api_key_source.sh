@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Hello Claude Demo - API Key Setup Script (Sourceable Version)
+# Claude Labs - API Key Setup Script (Sourceable Version)
 # This script can be sourced to set API key in current shell
 # Usage: source set_api_key_source.sh
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Hello Claude Demo - Web App Launcher
-Launches the Streamlit web interface for the Hello Claude Demo
+Claude Labs - Web App Launcher
+Launches the Streamlit web interface for Claude Labs
 """
 
 import os
@@ -37,7 +37,7 @@ def check_dependencies():
 
 def main():
     """Main launcher function"""
-    print("🚀 Hello Claude Demo - Web App Launcher")
+    print("🚀 Claude Labs - Web App Launcher")
     print("=" * 50)
     
     # Check dependencies

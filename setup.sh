@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Hello Claude Demo - Setup Script
-# This script automates the setup process for the Hello Claude demo
+# Claude Labs - Setup Script
+# This script automates the setup process for Claude Labs
 
 set -e  # Exit on any error
 
-echo "🚀 Hello Claude Demo - Setup Script"
+echo "🚀 Claude Labs - Setup Script"
 echo "=================================="
 
 # Check if Python 3 is installed

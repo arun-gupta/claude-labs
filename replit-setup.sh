@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Setting up Hello Claude Demo on Replit..."
+echo "🚀 Setting up Claude Labs on Replit..."
 
 # Install dependencies
 echo "📦 Installing dependencies..."

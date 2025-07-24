@@ -372,7 +372,7 @@ claude-labs/
 
 ├── replit-setup.sh     # Replit-specific setup script
 ├── assets/             # Images and screenshots
-│   ├── replit-hello-claude.png
+│   ├── replit-output.png
 │   └── codesapces-output.png
 ├── venv/               # Virtual environment (created during setup)
 ├── .gitignore          # Prevents accidental commits of secrets

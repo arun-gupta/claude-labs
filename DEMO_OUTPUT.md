@@ -1,6 +1,6 @@
 # 🎬 Demo Output Example
 
-> **What the Hello Claude Demo looks like with a working API key**
+> **What Claude Labs looks like with a working API key**
 
 ## 🚀 **Replit Demo (Easiest - One-Click Experience!)**
 
@@ -13,7 +13,7 @@ Collecting requests>=2.25.0
   Downloading requests-2.32.4-py3-none-any.whl
 Successfully installed anthropic-0.18.0 requests-2.32.4
 
-🚀 Running Hello Claude Demo...
+🚀 Running Claude Labs...
 ```
 
 ### **Expected Output:**
@@ -38,10 +38,10 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 ### **Replit Interface Screenshot:**
 
-#### **🖥️ Hello Claude Demo on Replit**
+#### **🖥️ Claude Labs on Replit**
 ![Hello Claude Demo on Replit](assets/replit-output.png)
 
-*Complete Replit workspace showing the Hello Claude demo running successfully with URL input, dependencies installed, and Claude summarization in action*
+*Complete Replit workspace showing Claude Labs running successfully with URL input, dependencies installed, and Claude summarization in action*
 
 **💡 Note:** This screenshot shows the actual Replit interface with the demo working.
 
@@ -49,7 +49,7 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 ### **Setup Process:**
 ```
-🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: python main.py --url https://www.anthropic.com/news/introducing-claude
+🚀 Claude Labs is ready! Set your ANTHROPIC_API_KEY and run: ./web.sh
 ```
 
 ### **Expected Output:**
@@ -74,16 +74,16 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 ### **GitHub Codespaces Interface Screenshot:**
 
-#### **🖥️ Hello Claude Demo on GitHub Codespaces**
+#### **🖥️ Claude Labs on GitHub Codespaces**
 ![Hello Claude Demo on GitHub Codespaces](assets/codesapces-output.png)
 
-*Complete GitHub Codespaces environment showing VS Code interface with the Hello Claude demo running successfully, featuring the rich terminal output with colorful panels and progress bars*
+*Complete GitHub Codespaces environment showing VS Code interface with Claude Labs running successfully, featuring the rich terminal output with colorful panels and progress bars*
 
 ## ⚡ **Gitpod Demo (Cloud Development Environment!)**
 
 ### **Setup Process:**
 ```
-🚀 Hello Claude Demo environment is ready!
+🚀 Claude Labs environment is ready!
 💡 Set your ANTHROPIC_API_KEY: export ANTHROPIC_API_KEY='your-api-key-here'
 🎯 Try: python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
@@ -110,10 +110,10 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 
 ### **Gitpod Interface Screenshot:**
 
-#### **🖥️ Hello Claude Demo on Gitpod**
+#### **🖥️ Claude Labs on Gitpod**
 ![Hello Claude Demo on Gitpod](assets/gitpod-output.png)
 
-*Complete Gitpod workspace showing the cloud development environment with VS Code interface, terminal with rich output, and the Hello Claude demo running successfully*
+*Complete Gitpod workspace showing the cloud development environment with VS Code interface, terminal with rich output, and Claude Labs running successfully*
 
 ## 🌐 **URL Input Demo**
 
@@ -216,19 +216,19 @@ python main.py
 ### **Expected Output:**
 ```
 📝 Enter text to summarize (Ctrl+D when done):
-This is a sample text that demonstrates the interactive mode of the Hello Claude demo. Users can type their text directly into the terminal and the system will provide a concise summary using Claude's advanced language processing capabilities.
+This is a sample text that demonstrates the interactive mode of Claude Labs. Users can type their text directly into the terminal and the system will provide a concise summary using Claude's advanced language processing capabilities.
 ^D
 
 📊 Original text (234 characters):
 --------------------------------------------------
-This is a sample text that demonstrates the interactive mode of the Hello Claude demo. Users can type their text directly into the terminal and the system will provide a concise summary using Claude's advanced language processing capabilities.
+This is a sample text that demonstrates the interactive mode of Claude Labs. Users can type their text directly into the terminal and the system will provide a concise summary using Claude's advanced language processing capabilities.
 --------------------------------------------------
 
 🤖 Summarizing with Claude...
 
 ✨ Summary:
 ==================================================
-The Hello Claude demo's interactive mode allows users to type text directly into the terminal, which the system then summarizes using Claude's advanced language processing capabilities.
+Claude Labs' interactive mode allows users to type text directly into the terminal, which the system then summarizes using Claude's advanced language processing capabilities.
 ==================================================
 📈 Summary length: 189 characters
 📉 Compression ratio: 80.8%

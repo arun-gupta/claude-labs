@@ -1,6 +1,6 @@
 # Sample Files for Testing
 
-This directory contains sample text files for testing the Hello Claude Demo.
+This directory contains sample text files for testing Claude Labs.
 
 ## 📄 Available Samples
 

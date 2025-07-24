@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hello Claude Demo - Web App
+Claude Labs - Web App
 Simple launcher for the Streamlit web interface
 """
 
@@ -11,7 +11,7 @@ from pathlib import Path
 
 def main():
     """Launch the Streamlit web app"""
-    print("🌐 Hello Claude Demo - Web App")
+    print("🌐 Claude Labs - Web App")
     print("=" * 40)
     
     # Check if app.py exists
