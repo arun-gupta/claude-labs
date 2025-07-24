@@ -10,7 +10,7 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 - **🎯 Real-world use case** - Practical text summarization that actually works
 - **🛡️ Bulletproof error handling** - Helpful messages that guide you to success
 - **📖 Clean, well-commented code** - Easy to understand and modify
-- **🔧 Multiple input methods** - Command line, file input, or stdin
+- **🔧 Multiple input methods** - Command line, file input, URL input, or stdin
 - **📊 Smart analytics** - See compression ratios and character counts
 - **🐍 Virtual environment** - Isolated dependencies for clean development
 
@@ -91,6 +91,12 @@ source venv/bin/activate
 python main.py --file document.txt
 ```
 
+### URL Input
+```bash
+source venv/bin/activate
+python main.py --url https://example.com/article
+```
+
 ### Interactive Mode
 ```bash
 source venv/bin/activate
@@ -163,6 +169,7 @@ hello-claude/
 ├── demo.py             # Showcase script with predefined example
 ├── Makefile            # Development workflow commands
 ├── sample.txt          # Sample text for testing
+├── document.txt        # Sample document for testing
 ├── venv/               # Virtual environment (created during setup)
 ├── .gitignore          # Prevents accidental commits of secrets
 └── LICENSE             # MIT License for maximum freedom

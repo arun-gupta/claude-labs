@@ -30,7 +30,7 @@ AI and ML are revolutionizing problem-solving, decision-making, and automation a
 
 ### **Input:**
 ```bash
-python main.py --file sample.txt
+python main.py --file document.txt
 ```
 
 ### **Expected Output:**
@@ -64,6 +64,33 @@ Looking forward, AI and ML will continue rapid evolution across healthcare, educ
 ==================================================
 📈 Summary length: 892 characters
 📉 Compression ratio: 39.3%
+```
+
+## 🌐 **URL Input Demo**
+
+### **Input:**
+```bash
+python main.py --url https://example.com/article
+```
+
+### **Expected Output:**
+```
+🌐 Fetching content from: https://example.com/article
+✅ Successfully fetched 2847 characters
+
+📊 Original text (2847 characters):
+--------------------------------------------------
+[Content fetched from the URL would appear here]
+--------------------------------------------------
+
+🤖 Summarizing with Claude...
+
+✨ Summary:
+==================================================
+[Summary of the URL content would appear here]
+==================================================
+📈 Summary length: 423 characters
+📉 Compression ratio: 14.9%
 ```
 
 ## 🎬 **Interactive Demo**
@@ -127,6 +154,18 @@ The Hello Claude demo's interactive mode allows users to type text directly into
 ```
 ❌ Error: Text is too short to summarize meaningfully!
 💡 Please provide at least 10 characters
+```
+
+### **Invalid URL:**
+```
+❌ Error: Invalid URL format!
+💡 Please provide a valid URL (e.g., https://example.com)
+```
+
+### **URL Fetch Error:**
+```
+❌ Error fetching URL: 404 Client Error: Not Found for url
+💡 Please check the URL and your internet connection
 ```
 
 ## 🎯 **Key Features Demonstrated**

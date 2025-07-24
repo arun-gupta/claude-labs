@@ -16,6 +16,8 @@ import argparse
 from typing import Optional
 import anthropic
 from pathlib import Path
+import requests
+from urllib.parse import urlparse
 
 
 def get_api_key() -> str:
@@ -70,6 +72,63 @@ def read_file_content(file_path: str) -> str:
     except UnicodeDecodeError:
         print(f"❌ Error: Could not read '{file_path}' - encoding issue!")
         print("💡 Try saving the file as UTF-8")
+        sys.exit(1)
+
+
+def read_url_content(url: str) -> str:
+    """
+    Read content from a URL with error handling.
+    
+    Args:
+        url (str): URL to fetch content from
+        
+    Returns:
+        str: URL content
+        
+    Raises:
+        SystemExit: If URL cannot be fetched with helpful error message
+    """
+    try:
+        print(f"🌐 Fetching content from: {url}")
+        
+        # Validate URL format
+        parsed_url = urlparse(url)
+        if not parsed_url.scheme or not parsed_url.netloc:
+            print("❌ Error: Invalid URL format!")
+            print("💡 Please provide a valid URL (e.g., https://example.com)")
+            sys.exit(1)
+        
+        # Fetch content with timeout and user agent
+        headers = {
+            'User-Agent': 'Hello-Claude-Demo/1.0 (https://github.com/arun-gupta/hello-claude)'
+        }
+        
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        
+        # Try to extract text content
+        content = response.text
+        
+        # Basic content validation
+        if not content.strip():
+            print("❌ Error: No content found at the URL!")
+            sys.exit(1)
+        
+        # Limit content size to prevent excessive API usage
+        if len(content) > 50000:  # 50KB limit
+            print("⚠️  Warning: Content is very large, truncating to first 50KB")
+            content = content[:50000]
+        
+        print(f"✅ Successfully fetched {len(content)} characters")
+        return content
+        
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Error fetching URL: {e}")
+        print("💡 Please check the URL and your internet connection")
+        sys.exit(1)
+    except Exception as e:
+        print(f"❌ Unexpected error: {e}")
+        print("💡 Please try again or use a different URL")
         sys.exit(1)
 
 
@@ -135,6 +194,7 @@ def main():
 Examples:
   python main.py "This is a long text that needs to be summarized..."
   python main.py --file document.txt
+  python main.py --url https://example.com/article
   echo "Your text here" | python main.py
         """
     )
@@ -142,17 +202,23 @@ Examples:
     parser.add_argument(
         'text',
         nargs='?',
-        help='Text to summarize (or use --file for file input)'
+        help='Text to summarize (or use --file or --url for other input methods)'
     )
     parser.add_argument(
         '--file', '-f',
         help='Read text from file instead of command line argument'
     )
+    parser.add_argument(
+        '--url', '-u',
+        help='Fetch text from URL instead of command line argument'
+    )
     
     args = parser.parse_args()
     
     # Get input text
-    if args.file:
+    if args.url:
+        text = read_url_content(args.url)
+    elif args.file:
         text = read_file_content(args.file)
         print(f"📄 Reading from file: {args.file}")
     elif args.text:

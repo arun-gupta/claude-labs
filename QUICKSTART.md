@@ -75,7 +75,14 @@ python demo.py
 
 ```bash
 source venv/bin/activate
-python main.py --file sample.txt
+python main.py --file document.txt
+```
+
+## 🌐 URL Input
+
+```bash
+source venv/bin/activate
+python main.py --url https://example.com/article
 ```
 
 ## 🛠️ Make Commands
