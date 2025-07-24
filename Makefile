@@ -13,6 +13,8 @@ help:
 	@echo "make setup      - Run automated setup script"
 	@echo "make test       - Run setup verification tests"
 	@echo "make demo       - Run the demo with example text"
+	@echo "make web        - Launch the Streamlit web app"
+	@echo "make web-direct - Launch Streamlit app directly"
 	@echo "make clean      - Clean up Python cache files"
 	@echo "make help       - Show this help message"
 
@@ -62,6 +64,26 @@ demo:
 		exit 1; \
 	fi
 	@source venv/bin/activate && python demo.py
+
+# Launch web app
+web:
+	@echo "🌐 Launching Hello Claude Web App..."
+	@if [ ! -d "venv" ]; then \
+		echo "❌ Virtual environment not found!"; \
+		echo "💡 Run 'make install' or 'make setup' first"; \
+		exit 1; \
+	fi
+	@source venv/bin/activate && python run_web_app.py
+
+# Launch web app directly
+web-direct:
+	@echo "🌐 Launching Streamlit app directly..."
+	@if [ ! -d "venv" ]; then \
+		echo "❌ Virtual environment not found!"; \
+		echo "💡 Run 'make install' or 'make setup' first"; \
+		exit 1; \
+	fi
+	@source venv/bin/activate && streamlit run app.py --server.port 8501 --server.address localhost
 
 # Clean up cache files
 clean:

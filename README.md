@@ -6,6 +6,7 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ## ✨ Features
 
+- **🌐 Beautiful web interface** - Interactive Streamlit app with chat, file upload, and more
 - **⚡ Lightning-fast setup** - From zero to working in under 5 minutes
 - **🎯 Real-world use case** - Practical text summarization that actually works
 - **🛡️ Bulletproof error handling** - Helpful messages that guide you to success
@@ -16,7 +17,25 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ## 🚀 Quick Start (5 minutes or less!)
 
-### 🌐 **Option 1: Cloud Platforms (Recommended!)**
+### 🌐 **Option 1: Interactive Web App (Recommended!)**
+
+**Experience Claude with a beautiful, interactive web interface!**
+
+```bash
+git clone https://github.com/yourusername/hello-claude.git
+cd hello-claude
+./setup.sh
+./web.sh
+```
+
+**✨ Web App Features:**
+- **💬 Real-time Chat** - Talk with Claude instantly
+- **📄 File Upload** - Drag & drop documents for summarization
+- **🌐 URL Processing** - Fetch and summarize web content
+- **🎨 Beautiful UI** - Modern, responsive design
+- **⚙️ Model Selection** - Choose between Claude models
+
+### ☁️ **Option 2: Cloud Platforms**
 
 **☁️ GitHub Codespaces - Full VS Code environment:**
 [![Open in Codespaces](https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717)](https://github.com/codespaces)
@@ -32,12 +51,21 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 > 💡 **Why cloud platforms?** Zero setup, instant access, pre-configured environment, and you can start coding immediately!
 
-### 💻 Option 2: Automated Setup (Local)
+### 💻 Option 3: CLI Setup (For Developers)
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
 ./setup.sh
+export ANTHROPIC_API_KEY='your-api-key-here'
+python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
+
+**🔧 Perfect for:**
+- **Automation & Scripts** - Easy to integrate into other tools
+- **Server Environments** - No GUI needed
+- **Power Users** - Developers who prefer command line
+- **CI/CD Pipelines** - Automated testing and processing
+- **Learning** - See how to use the API programmatically
 
 The setup script will:
 - ✅ Create a virtual environment
@@ -51,7 +79,7 @@ The setup script will:
 - **Permanent**: Save to shell config file (persistent)
 - **Skip**: Set up later using `./set_api_key.sh`
 
-### 💻 Option 3: Manual Setup
+### 💻 Option 4: Manual Setup
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
@@ -70,7 +98,7 @@ export ANTHROPIC_API_KEY='your-api-key-here'
 python main.py "This is a long text that needs to be summarized into a concise version that captures the key points and main ideas."
 ```
 
-### 🛠️ Option 4: Using Make
+### 🛠️ Option 5: Using Make
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
@@ -78,6 +106,8 @@ make install
 export ANTHROPIC_API_KEY='your-api-key-here'
 make demo
 ```
+
+
 
 ## 🔑 API Key Setup
 
@@ -220,6 +250,37 @@ source venv/bin/activate
 echo "Your text here" | python main.py
 ```
 
+## 🌐 **Web Interface (Primary Experience!)**
+
+Experience Claude with a beautiful, interactive web interface! This is the recommended way to explore Claude's capabilities.
+
+### **Launch the Web App:**
+```bash
+# Option 1: Simple shell script (easiest)
+./web.sh
+
+# Option 2: Python script
+python web.py
+
+# Option 3: Direct Streamlit
+streamlit run app.py
+
+# Option 4: Using Make
+make web
+```
+
+### **Web App Features:**
+- **💬 Chat Interface** - Real-time conversation with Claude
+- **📄 File Upload** - Drag & drop documents for summarization
+- **🌐 URL Processing** - Fetch and summarize web content
+- **📊 Analytics** - API status, model info, usage statistics
+- **🎨 Beautiful UI** - Modern, responsive design
+- **⚙️ Model Selection** - Choose between Claude models
+- **🔑 Easy API Setup** - Set API key in the sidebar
+
+### **Web App Screenshots:**
+*Coming soon! The web interface provides a much more engaging way to interact with Claude.*
+
 ## 📊 Expected Output
 
 **💡 See [DEMO_OUTPUT.md](DEMO_OUTPUT.md) for detailed examples with screenshots, different input methods, and real output samples.**
@@ -272,7 +333,11 @@ Copy only the lines without `#` at the beginning.
 ```
 hello-claude/
 ├── main.py              # Main application with comprehensive error handling
-├── requirements.txt     # Minimal dependencies (just anthropic)
+├── app.py               # Streamlit web interface
+├── web.py               # Simple Python web app launcher
+├── web.sh               # Simple shell script web app launcher
+├── run_web_app.py       # Advanced web app launcher script
+├── requirements.txt     # Python dependencies including Streamlit
 ├── README.md           # This file - your guide to success
 ├── QUICKSTART.md       # Lightning-fast setup guide
 ├── setup.sh            # Automated setup script with virtual environment
@@ -305,7 +370,16 @@ make venv       # Create virtual environment
 make install    # Install dependencies (creates venv if needed)
 make test       # Run setup verification tests
 make demo       # Run the demo with example text
+make web        # Launch the Streamlit web app
+make web-direct # Launch Streamlit app directly
 make clean      # Clean up Python cache files
+```
+
+### **Simple Web App Launch:**
+```bash
+./web.sh        # Shell script (easiest)
+python web.py   # Python script
+streamlit run app.py  # Direct Streamlit
 ```
 
 ### Using Setup Script

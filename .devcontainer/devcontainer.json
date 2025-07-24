@@ -17,7 +17,8 @@
         "ms-python.pylint",
         "ms-vscode.vscode-json",
         "redhat.vscode-yaml",
-        "ms-vscode.makefile-tools"
+        "ms-vscode.makefile-tools",
+        "ms-toolsai.jupyter"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
@@ -41,9 +42,15 @@
     "source=${localWorkspaceFolder}/.venv,target=/workspaces/.venv,type=bind,consistency=cached"
   ],
 
-  "forwardPorts": [],
+  "forwardPorts": [8501],
   
-  "portsAttributes": {},
+  "portsAttributes": {
+    "8501": {
+      "label": "Hello Claude Web App",
+      "onAutoForward": "openBrowser",
+      "protocol": "http"
+    }
+  },
   
-  "postStartCommand": "echo '🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: python main.py --url https://www.anthropic.com/news/introducing-claude'"
+  "postStartCommand": "echo '🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: ./web.sh'"
 } 
