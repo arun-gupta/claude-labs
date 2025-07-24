@@ -18,13 +18,13 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ### 🌐 **Option 1: Cloud Platforms (Recommended!)**
 
-**🚀 Replit - One-click setup:**
-[![Open in Replit](https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF)](https://replit.com)
-([Detailed setup guide](#-replit-integration))
-
 **☁️ GitHub Codespaces - Full VS Code environment:**
 [![Open in Codespaces](https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717)](https://github.com/codespaces)
 ([Detailed setup guide](#️-github-codespaces))
+
+**🚀 Replit - One-click setup:**
+[![Open in Replit](https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF)](https://replit.com)
+([Detailed setup guide](#-replit-integration))
 
 **⚡ Gitpod - Cloud development environment:**
 [![Open in Gitpod](https://img.shields.io/badge/⚡_Open_Gitpod-FFAE33?style=for-the-badge&logo=gitpod&logoColor=white&labelColor=FFAE33&color=FFAE33)](https://gitpod.io/#https://github.com/arun-gupta/hello-claude)
@@ -109,27 +109,6 @@ make demo
 
 This project is configured for multiple cloud development platforms!
 
-### 🚀 **Replit Integration**
-
-<div align="center">
-
-<a href="https://replit.com" target="_blank">
-<img src="https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF" alt="Open Replit" />
-</a>
-
-</div>
-
-**On Replit:**
-1. **Import**: Click "Import code or design" → "GitHub" → Paste repository URL
-2. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
-3. **Run**: Click the Run button to test instantly
-
-**Features:**
-- ✅ **Auto-install**: Dependencies installed automatically
-- ✅ **Environment**: Python 3.9 with all required packages
-- ✅ **Secrets**: Secure API key management
-- ✅ **One-click run**: Pre-configured to test URL input
-
 ### ☁️ **GitHub Codespaces**
 
 <div align="center">
@@ -154,6 +133,27 @@ This project is configured for multiple cloud development platforms!
 - ✅ **Environment Variables**: Easy API key management
 - ✅ **Extensions**: Rich ecosystem of development tools
 - ✅ **Auto-setup**: Dependencies installed automatically
+
+### 🚀 **Replit Integration**
+
+<div align="center">
+
+<a href="https://replit.com" target="_blank">
+<img src="https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF" alt="Open Replit" />
+</a>
+
+</div>
+
+**On Replit:**
+1. **Import**: Click "Import code or design" → "GitHub" → Paste repository URL
+2. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
+3. **Run**: Click the Run button to test instantly
+
+**Features:**
+- ✅ **Auto-install**: Dependencies installed automatically
+- ✅ **Environment**: Python 3.9 with all required packages
+- ✅ **Secrets**: Secure API key management
+- ✅ **One-click run**: Pre-configured to test URL input
 
 ### ⚡ **Gitpod Integration**
 
