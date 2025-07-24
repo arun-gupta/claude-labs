@@ -1,2 +1,23 @@
 language = "python3"
-run = "pip install -r requirements.txt && streamlit run app.py --server.port 8501 --server.address 0.0.0.0" 
+run = "pip install -r requirements.txt && streamlit run app.py --server.port 8501 --server.address 0.0.0.0"
+
+[nix]
+channel = "stable-22_11"
+
+[env]
+PYTHONPATH = "/home/runner/$REPL_SLUG"
+
+[packager]
+language = "python3"
+ignoredPackages = ["unit_tests"]
+
+[packager.features]
+packageSearch = true
+guessImports = true
+
+[languages.python3]
+pattern = "**/*.py"
+syntax = "python"
+
+[languages.python3.languageServer]
+start = [ "pylsp" ] 
