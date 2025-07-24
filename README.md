@@ -35,7 +35,7 @@ A comprehensive showcase of Claude's capabilities designed for immediate develop
 ([Detailed setup guide](#️-github-codespaces))
 
 **🚀 Replit - One-click setup:**
-<a href="https://replit.com/new/template/github/arun-gupta/claude-labs" target="_blank">
+<a href="https://replit.com/new/github/arun-gupta/claude-labs" target="_blank">
 <img src="https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF" alt="Open in Replit" />
 </a>
 ([Detailed setup guide](#-replit-integration))
@@ -183,7 +183,7 @@ This project is configured for multiple cloud development platforms!
 
 <div align="center">
 
-<a href="https://replit.com/new/template/github/arun-gupta/claude-labs" target="_blank">
+<a href="https://replit.com/new/github/arun-gupta/claude-labs" target="_blank">
 <img src="https://img.shields.io/badge/🚀_Open_Replit-00D4FF?style=for-the-badge&logo=replit&logoColor=white&labelColor=00D4FF&color=00D4FF" alt="Open Replit" />
 </a>
 
@@ -191,7 +191,7 @@ This project is configured for multiple cloud development platforms!
 
 **On Replit:**
 1. **Click**: The "Open in Replit" button above
-2. **Create**: Click "Use this template" (one-click setup!)
+2. **Create**: Click "Create Repl" (one-click setup!)
 3. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
 4. **Run**: Click the Run button to launch the web app
 5. **Access Web App**: The web app opens automatically in the **Webview** tab above the terminal
