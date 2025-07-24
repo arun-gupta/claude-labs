@@ -46,7 +46,7 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 2. Click the **"Code"** button → **"Codespaces"** → **"Create codespace"**
 3. Wait for the environment to load (VS Code in browser)
 4. Set your API key: Terminal → `export ANTHROPIC_API_KEY='your-key-here'`
-5. Run: `python main.py --file samples/document.txt`
+5. Run: `python main.py --url https://www.anthropic.com/news/introducing-claude`
 
 **Alternative Method (New Interface):**
 1. Go to [GitHub Codespaces](https://github.com/codespaces)
@@ -54,7 +54,7 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 3. **Select Repository**: Choose "arun-gupta/hello-claude" from dropdown
 4. **Configure**: Select branch, region, and machine type (defaults work fine)
 5. Click **"Create codespace"** button
-6. Once loaded, set API key and run: `python main.py --file samples/document.txt`
+6. Once loaded, set API key and run: `python main.py --url https://www.anthropic.com/news/introducing-claude`
 
 ### 💻 Option 2: Automated Setup (Local)
 ```bash
@@ -171,13 +171,15 @@ This project is configured for multiple cloud development platforms!
 
 ## 📖 Usage Examples
 
-### 🌐 URL Input (Easiest!)
+### 🌐 URL Input (Recommended!)
 ```bash
 source venv/bin/activate
 python main.py --url https://www.anthropic.com/news/introducing-claude
 ```
 
 > 💡 **Try this URL**: Copy/paste the commands above to test with a real article about Claude!
+> 
+> **🎯 Perfect for testing**: This URL demonstrates the tool's ability to fetch and summarize real web content instantly!
 
 ### 📄 File Input
 ```bash

@@ -45,5 +45,5 @@
   
   "portsAttributes": {},
   
-  "postStartCommand": "echo '🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: python main.py --file samples/document.txt'"
+  "postStartCommand": "echo '🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: python main.py --url https://www.anthropic.com/news/introducing-claude'"
 } 
