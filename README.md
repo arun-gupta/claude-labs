@@ -279,7 +279,8 @@ hello-claude/
 
 ├── replit-setup.sh     # Replit-specific setup script
 ├── assets/             # Images and screenshots
-│   └── replit-screenshots/  # Replit interface screenshots
+│   ├── replit-hello-claude.png
+│   └── github-codespaces-output.png
 ├── venv/               # Virtual environment (created during setup)
 ├── .gitignore          # Prevents accidental commits of secrets
 └── LICENSE             # Apache License 2.0 for maximum freedom

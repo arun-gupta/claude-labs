@@ -39,11 +39,45 @@ Claude is Anthropic's next-generation AI assistant based on research into helpfu
 ### **Replit Interface Screenshot:**
 
 #### **🖥️ Hello Claude Demo on Replit**
-![Hello Claude Demo on Replit](assets/replit-screenshots/replit-hello-claude.png)
+![Hello Claude Demo on Replit](assets/replit-hello-claude.png)
 
 *Complete Replit workspace showing the Hello Claude demo running successfully with URL input, dependencies installed, and Claude summarization in action*
 
-**💡 Note:** This screenshot shows the actual Replit interface with the demo working. See [assets/replit-screenshots/README.md](assets/replit-screenshots/README.md) for detailed screenshot guidelines.
+**💡 Note:** This screenshot shows the actual Replit interface with the demo working.
+
+## ☁️ **GitHub Codespaces Demo (Full IDE Experience!)**
+
+### **Setup Process:**
+```
+🚀 Hello Claude Demo is ready! Set your ANTHROPIC_API_KEY and run: python main.py --url https://www.anthropic.com/news/introducing-claude
+```
+
+### **Expected Output:**
+```
+🌐 Fetching content from: https://www.anthropic.com/news/introducing-claude
+✅ Successfully fetched 50000 characters
+
+📊 Original text (50000 characters):
+--------------------------------------------------
+[Content from Anthropic's "Introducing Claude" article]
+--------------------------------------------------
+
+🤖 Summarizing with Claude...
+
+✨ Summary:
+==================================================
+Claude is Anthropic's next-generation AI assistant based on research into helpful, honest, and harmless AI systems. It's accessible through chat interface and API, capable of various conversational and text processing tasks while maintaining high reliability and predictability. Claude can help with summarization, search, creative writing, Q&A, coding, and more. Early customers report Claude is much less likely to produce harmful outputs, easier to converse with, and more steerable. The system is being offered in two versions: Claude (high-performance) and Claude Instant (lighter, faster, less expensive). Anthropic is working with partners like Notion, Quora, DuckDuckGo, Juni Learning, Robin AI, and AssemblyAI to integrate Claude into various applications, from productivity tools to legal infrastructure and audio processing platforms.
+==================================================
+📈 Summary length: 456 characters
+📉 Compression ratio: 0.9%
+```
+
+### **GitHub Codespaces Interface Screenshot:**
+
+#### **🖥️ Hello Claude Demo on GitHub Codespaces**
+![Hello Claude Demo on GitHub Codespaces](assets/github-codespaces-output.png)
+
+*Complete GitHub Codespaces environment showing VS Code interface with the Hello Claude demo running successfully, featuring the rich terminal output with colorful panels and progress bars*
 
 ## 🌐 **URL Input Demo**
 
