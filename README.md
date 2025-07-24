@@ -16,7 +16,14 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ## 🚀 Quick Start (5 minutes or less!)
 
-### Option 1: Automated Setup (Recommended)
+### 🌐 Option 1: Try on Replit (Easiest!)
+[![Run on Replit](https://replit.com/badge/github/arun-gupta/hello-claude)](https://replit.com/github/arun-gupta/hello-claude)
+
+1. Click the "Run on Replit" button above
+2. Set your API key in Replit Secrets (Tools → Secrets)
+3. Click "Run" to test the demo!
+
+### 💻 Option 2: Automated Setup (Local)
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
 cd hello-claude
@@ -73,6 +80,23 @@ make demo
    ```
 
 **💡 Important**: You need a valid API key with credits to use the demo. See [DEMO_OUTPUT.md](DEMO_OUTPUT.md) for examples of what the output looks like.
+
+## 🌐 Replit Integration
+
+This project is fully configured for Replit! 
+
+### **On Replit:**
+1. **Fork/Import** the repository to Replit
+2. **Set API Key**: Go to Tools → Secrets → Add `ANTHROPIC_API_KEY`
+3. **Run**: Click the Run button to test with the Anthropic article
+4. **Customize**: Modify the `.replit` file to change the default command
+
+### **Replit Features:**
+- ✅ **Auto-install**: Dependencies installed automatically
+- ✅ **Environment**: Python 3.9 with all required packages
+- ✅ **Secrets**: Secure API key management
+- ✅ **One-click run**: Pre-configured to test URL input
+- ✅ **Live preview**: See results instantly
 
 ## 📖 Usage Examples
 
@@ -172,6 +196,10 @@ hello-claude/
 ├── Makefile            # Development workflow commands
 ├── sample.txt          # Sample text for testing
 ├── document.txt        # Sample document for testing
+├── .replit             # Replit configuration
+├── pyproject.toml      # Modern Python packaging
+├── replit.nix          # Replit Nix environment
+├── replit-setup.sh     # Replit-specific setup script
 ├── venv/               # Virtual environment (created during setup)
 ├── .gitignore          # Prevents accidental commits of secrets
 └── LICENSE             # Apache License 2.0 for maximum freedom
