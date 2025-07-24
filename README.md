@@ -47,8 +47,8 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 3. **Select Repository**: Choose "arun-gupta/hello-claude" from dropdown
 4. **Configure**: Select branch, region, and machine type (defaults work fine)
 5. Click **"Create codespace"** button
-6. Once loaded, set API key: `export ANTHROPIC_API_KEY='your-key-here'`
-7. Run: `python main.py --url https://www.anthropic.com/news/introducing-claude`
+6. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-key-here'`
+7. **Run**: `python main.py --url https://www.anthropic.com/news/introducing-claude`
 
 ### 💻 Option 2: Automated Setup (Local)
 ```bash
@@ -97,16 +97,27 @@ export ANTHROPIC_API_KEY='your-api-key-here'
 make demo
 ```
 
-## 🔑 Get Your API Key
+## 🔑 API Key Setup
 
+**First, get your API key:**
 1. Visit [Anthropic Console](https://console.anthropic.com/)
 2. Create an account and get your API key
-3. Set it as an environment variable:
-   ```bash
-   export ANTHROPIC_API_KEY='your-api-key-here'
-   ```
+3. **Important**: You need credits in your account to use the API
 
-**💡 Important**: You need a valid API key with credits to use the demo.
+### **Where to Set Your API Key:**
+
+#### **🌐 Replit:**
+- Go to **Tools** → **Secrets** (scroll down)
+- Add new secret: `ANTHROPIC_API_KEY` = `your-api-key-here`
+
+#### **☁️ GitHub Codespaces:**
+- In the terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
+- Or add to environment variables in VS Code settings
+
+#### **💻 Local Development:**
+- **Session only**: `export ANTHROPIC_API_KEY='your-api-key-here'`
+- **Permanent**: Add to `~/.bashrc` or `~/.zshrc`
+- **Windows**: `set ANTHROPIC_API_KEY=your-api-key-here`
 
 ## 🌐 Cloud Platform Integrations
 
@@ -148,7 +159,8 @@ This project is configured for multiple cloud development platforms!
 2. **Create**: Click "New codespace" → Select "arun-gupta/hello-claude" from dropdown
 3. **Configure**: Select branch, region, and machine type (defaults work fine)
 4. **Create**: Click "Create codespace" button
-5. **Setup**: Set API key and run commands
+5. **Set API Key**: In terminal: `export ANTHROPIC_API_KEY='your-api-key-here'`
+6. **Run**: `python main.py --url https://www.anthropic.com/news/introducing-claude`
 
 **Features:**
 - ✅ **Full VS Code**: Complete development environment
