@@ -51,10 +51,10 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 **Alternative Method (New Interface):**
 1. Go to [GitHub Codespaces](https://github.com/codespaces)
 2. Click **"New codespace"** (green button)
-3. Select **"Blank"** template
-4. Click **"Use this template"**
-5. Once loaded, clone the repo: `git clone https://github.com/arun-gupta/hello-claude.git`
-6. Open the project folder and follow steps 4-5 above
+3. **Select Repository**: Choose "arun-gupta/hello-claude" from dropdown
+4. **Configure**: Select branch, region, and machine type (defaults work fine)
+5. Click **"Create codespace"** button
+6. Once loaded, set API key and run: `python main.py --file samples/document.txt`
 
 ### 💻 Option 2: Automated Setup (Local)
 ```bash
@@ -156,9 +156,11 @@ This project is configured for multiple cloud development platforms!
 
 **Method 2 - From Codespaces Dashboard:**
 1. **Go to**: [GitHub Codespaces](https://github.com/codespaces)
-2. **Create**: Click "New codespace" → Select "Blank" template
-3. **Clone**: `git clone https://github.com/arun-gupta/hello-claude.git`
-4. **Setup**: Set API key and run commands
+2. **Create**: Click "New codespace" (green button)
+3. **Select Repository**: Choose "arun-gupta/hello-claude" from dropdown
+4. **Configure**: Select branch, region, and machine type (defaults work fine)
+5. **Create**: Click "Create codespace" button
+6. **Setup**: Once loaded, set API key and run commands
 
 **Features:**
 - ✅ **Full VS Code**: Complete development environment
@@ -250,7 +252,7 @@ Copy only the lines without `#` at the beginning.
 ### ❌ "Can't find Codespaces button" or "Codespaces not working"
 **Solution:** GitHub Codespaces interface has changed! Try these methods:
 1. **From repository**: Click "Code" → "Codespaces" → "Create codespace"
-2. **From dashboard**: Go to [github.com/codespaces](https://github.com/codespaces) → "New codespace" → "Blank" template
+2. **From dashboard**: Go to [github.com/codespaces](https://github.com/codespaces) → "New codespace" → Select repository from dropdown
 3. **Alternative**: Use Replit integration instead
 
 ## 🏗️ Project Structure
