@@ -17,9 +17,9 @@ A clean, elegant demonstration of Claude's text summarization capabilities desig
 
 ## 🚀 Quick Start (5 minutes or less!)
 
-### 🌐 **Option 1: Interactive Web App (Recommended!)**
+### 🌐 **Option 1: Cloud Platforms (Recommended!)**
 
-**Experience Claude with a beautiful, interactive web interface!**
+**Zero setup, instant access to Claude's capabilities!**
 
 ```bash
 git clone https://github.com/yourusername/hello-claude.git
@@ -28,14 +28,12 @@ cd hello-claude
 ./web.sh
 ```
 
-**✨ Web App Features:**
-- **💬 Real-time Chat** - Talk with Claude instantly
-- **📄 File Upload** - Drag & drop documents for summarization
-- **🌐 URL Processing** - Fetch and summarize web content
-- **🎨 Beautiful UI** - Modern, responsive design
-- **⚙️ Model Selection** - Choose between Claude models
-
-### ☁️ **Option 2: Cloud Platforms**
+**✨ Cloud Platform Benefits:**
+- **🚀 Zero Setup** - Works immediately, no installation required
+- **⚡ Instant Access** - Start using Claude in under 30 seconds
+- **🌐 No Local Dependencies** - No Python, venv, or API key setup needed
+- **💻 Full Development Environment** - VS Code, extensions, and tools included
+- **🔒 Secure** - API keys managed securely by the platform
 
 **☁️ GitHub Codespaces - Full VS Code environment:**
 [![Open in Codespaces](https://img.shields.io/badge/☁️_Open_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=181717)](https://github.com/codespaces)
@@ -50,6 +48,24 @@ cd hello-claude
 ([Detailed setup guide](#-gitpod-integration))
 
 > 💡 **Why cloud platforms?** Zero setup, instant access, pre-configured environment, and you can start coding immediately!
+
+### 💻 **Option 2: Local Interactive Web App**
+
+**Experience Claude with a beautiful, interactive web interface on your local machine!**
+
+```bash
+git clone https://github.com/yourusername/hello-claude.git
+cd hello-claude
+./setup.sh
+./web.sh
+```
+
+**✨ Local Web App Features:**
+- **💬 Real-time Chat** - Talk with Claude instantly
+- **📄 File Upload** - Drag & drop documents for summarization
+- **🌐 URL Processing** - Fetch and summarize web content
+- **🎨 Beautiful UI** - Modern, responsive design
+- **⚙️ Model Selection** - Choose between Claude models
 
 ### 💻 Option 3: CLI Setup (For Developers)
 ```bash
