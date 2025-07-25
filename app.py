@@ -5,6 +5,17 @@ import os
 from typing import Optional
 import time
 from datetime import datetime
+import monitoring
+import pathlib
+
+LOG_PATH = pathlib.Path("claude_labs.log")
+
+def tail_log(path, n=100):
+    if not path.exists():
+        return ["Log file not found."]
+    with open(path, "r") as f:
+        lines = f.readlines()
+    return lines[-n:] if len(lines) > n else lines
 
 # Page configuration
 st.set_page_config(
@@ -104,6 +115,19 @@ def summarize_text(text: str, client: anthropic.Anthropic, model: str = "claude-
                     }
                 ]
             )
+            # --- Monitoring integration ---
+            input_tokens = getattr(getattr(response, 'usage', None), 'input_tokens', 0)
+            output_tokens = getattr(getattr(response, 'usage', None), 'output_tokens', 0)
+            monitoring.monitor.log_response(
+                request_id=f"web_{int(time.time() * 1000)}",
+                response=response,
+                end_time=time.time(),
+                input_tokens=input_tokens,
+                output_tokens=output_tokens,
+                model=model,
+                success=True
+            )
+            # --- End monitoring ---
             return response.content[0].text
     except Exception as e:
         st.error(f"❌ Error calling Claude API: {str(e)}")
@@ -123,10 +147,31 @@ def chat_with_claude(message: str, client: anthropic.Anthropic, model: str = "cl
                     }
                 ]
             )
+            # --- Monitoring integration ---
+            input_tokens = getattr(getattr(response, 'usage', None), 'input_tokens', 0)
+            output_tokens = getattr(getattr(response, 'usage', None), 'output_tokens', 0)
+            monitoring.monitor.log_response(
+                request_id=f"web_{int(time.time() * 1000)}",
+                response=response,
+                end_time=time.time(),
+                input_tokens=input_tokens,
+                output_tokens=output_tokens,
+                model=model,
+                success=True
+            )
+            # --- End monitoring ---
             return response.content[0].text
     except Exception as e:
         st.error(f"❌ Error calling Claude API: {str(e)}")
         return None
+
+def format_cost(cost):
+    if cost == 0:
+        return "$0.00"
+    elif abs(cost) < 0.000001:
+        return f"${cost:.2e}"
+    else:
+        return f"${cost:.8f}".rstrip('0').rstrip('.')
 
 # Main header
 st.markdown('<h1 class="main-header">🤖 Claude Labs</h1>', unsafe_allow_html=True)
@@ -371,68 +416,91 @@ with tab3:
                             compression = (1 - len(summary) / len(content)) * 100
                             st.metric("Compression", f"{compression:.1f}%")
 
-# Tab 4: Analytics
-with tab4:
-    st.header("📊 Analytics & Information")
-    
-    # API Status
-    st.subheader("🔑 API Status")
-    api_key = get_api_key()
-    if api_key:
-        st.success("✅ API key is configured")
-        
-        # Test API connection
-        if st.button("🧪 Test API Connection"):
-            client = initialize_client()
-            if client:
-                try:
-                    with st.spinner("Testing API connection..."):
-                        response = client.messages.create(
-                            model=model,
-                            max_tokens=50,
-                            messages=[{"role": "user", "content": "Hello!"}]
-                        )
-                    st.success("✅ API connection successful!")
-                    st.info(f"Response: {response.content[0].text}")
-                except Exception as e:
-                    st.error(f"❌ API connection failed: {str(e)}")
-    else:
-        st.error("❌ API key not configured")
-    
-    # Model Information
-    st.subheader("🤖 Model Information")
-    model_info = {
-        "claude-3-5-sonnet-20241022": {
-            "description": "Balanced performance and cost",
-            "best_for": "General use, conversations, analysis",
-            "speed": "Fast",
-            "cost": "Medium"
-        },
-        "claude-3-5-haiku-20241022": {
-            "description": "Fastest and most cost-effective",
-            "best_for": "Quick tasks, simple queries",
-            "speed": "Very Fast",
-            "cost": "Low"
-        },
-        "claude-3-opus-20240229": {
-            "description": "Most capable model",
-            "best_for": "Complex reasoning, creative tasks",
-            "speed": "Slower",
-            "cost": "High"
-        }
-    }
-    
-    selected_model_info = model_info.get(model, {})
-    if selected_model_info:
-        st.json(selected_model_info)
-    
-    # Usage Statistics
-    st.subheader("📈 Usage Statistics")
-    if st.session_state.chat_history:
-        st.metric("Total Conversations", len(st.session_state.chat_history))
-        st.metric("Latest Chat", st.session_state.chat_history[-1]["timestamp"].strftime("%Y-%m-%d %H:%M:%S"))
-    else:
-        st.info("No conversations yet. Start chatting to see statistics!")
+    # Tab 4: Analytics
+    with tab4:
+        st.header("📊 Analytics & Information")
+        analytics_tabs = st.tabs(["Usage", "Cost", "API Status", "Model Info", "Log"])
+
+        with analytics_tabs[0]:
+            st.subheader("📈 Usage Statistics")
+            analytics = monitoring.monitor.get_analytics()
+            st.metric("Total Tokens Used", f"{analytics.total_tokens:,}")
+            if st.session_state.chat_history:
+                st.metric("Total Conversations", len(st.session_state.chat_history))
+                st.metric("Latest Chat", st.session_state.chat_history[-1]["timestamp"].strftime("%Y-%m-%d %H:%M:%S"))
+            else:
+                st.info("No conversations yet. Start chatting to see statistics!")
+
+        with analytics_tabs[1]:
+            st.subheader("💸 Cost Metrics")
+            analytics = monitoring.monitor.get_analytics()
+            st.metric("Total Cost (USD)", format_cost(analytics.total_cost_usd))
+            avg_cost = analytics.total_cost_usd / analytics.total_requests if analytics.total_requests > 0 else 0
+            st.metric("Avg Cost per Conversation", format_cost(avg_cost))
+            if analytics.requests_by_model:
+                st.markdown("**Cost by Model:**")
+                for model, count in analytics.requests_by_model.items():
+                    st.write(f"{model}: {count} requests")
+
+        with analytics_tabs[2]:
+            st.subheader("🔑 API Status")
+            api_key = get_api_key()
+            if api_key:
+                st.success("✅ API key is configured")
+                if st.button("🧪 Test API Connection"):
+                    client = initialize_client()
+                    if client:
+                        try:
+                            with st.spinner("Testing API connection..."):
+                                response = client.messages.create(
+                                    model=model,
+                                    max_tokens=50,
+                                    messages=[{"role": "user", "content": "Hello!"}]
+                                )
+                            st.success("✅ API connection successful!")
+                            st.info(f"Response: {response.content[0].text}")
+                        except Exception as e:
+                            st.error(f"❌ API connection failed: {str(e)}")
+            else:
+                st.error("❌ API key not configured")
+
+        with analytics_tabs[3]:
+            st.subheader("🤖 Model Information")
+            model_info = {
+                "claude-3-5-sonnet-20241022": {
+                    "description": "Balanced performance and cost",
+                    "best_for": "General use, conversations, analysis",
+                    "speed": "Fast",
+                    "cost": "Medium"
+                },
+                "claude-3-5-haiku-20241022": {
+                    "description": "Fastest and most cost-effective",
+                    "best_for": "Quick tasks, simple queries",
+                    "speed": "Very Fast",
+                    "cost": "Low"
+                },
+                "claude-3-opus-20240229": {
+                    "description": "Most capable model",
+                    "best_for": "Complex reasoning, creative tasks",
+                    "speed": "Slower",
+                    "cost": "High"
+                }
+            }
+            selected_model_info = model_info.get(model, {})
+            if selected_model_info:
+                st.json(selected_model_info)
+
+        with analytics_tabs[4]:
+            st.subheader("📜 Request/Response Log")
+            num_log_lines = st.number_input(
+                "Number of log lines to display",
+                min_value=10,
+                max_value=1000,
+                value=100,
+                step=10
+            )
+            log_lines = tail_log(LOG_PATH, n=num_log_lines)
+            st.code("".join(log_lines), language="text")
 
 # Footer
 st.markdown("---")

@@ -142,19 +142,29 @@ class ClaudeMonitor:
         return metrics
     
     def _calculate_cost(self, input_tokens: int, output_tokens: int, model: str) -> float:
-        """Calculate approximate cost based on Claude pricing"""
-        # Claude 3.5 Sonnet pricing (approximate)
+        """Calculate approximate cost based on Claude pricing, with debug logging"""
         pricing = {
             "claude-3-5-sonnet-20241022": {"input": 0.003, "output": 0.015},
             "claude-3-5-haiku-20241022": {"input": 0.00025, "output": 0.00125},
             "claude-3-opus-20240229": {"input": 0.015, "output": 0.075}
         }
+        # Debug: print model and pricing keys
+        print(f"[DEBUG] _calculate_cost called with model: {model}")
+        print(f"[DEBUG] Pricing keys: {list(pricing.keys())}")
+        print(f"[DEBUG] input_tokens: {input_tokens}, output_tokens: {output_tokens}")
         
+        if model not in pricing:
+            print(f"[WARNING] Model '{model}' not found in pricing. Using Sonnet as default.")
         model_pricing = pricing.get(model, pricing["claude-3-5-sonnet-20241022"])
+        
+        if input_tokens == 0 and output_tokens == 0:
+            print(f"[WARNING] Both input_tokens and output_tokens are zero. Cost will be zero.")
+        
         input_cost = (input_tokens / 1000) * model_pricing["input"]
         output_cost = (output_tokens / 1000) * model_pricing["output"]
-        
-        return input_cost + output_cost
+        total_cost = input_cost + output_cost
+        print(f"[DEBUG] Calculated input_cost: {input_cost}, output_cost: {output_cost}, total_cost: {total_cost}")
+        return total_cost
     
     def _update_analytics(self, metrics: RequestMetrics):
         """Update aggregated analytics"""
