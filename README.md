@@ -560,7 +560,7 @@ We're planning to enhance this lab with even better developer experience. Here's
 ### **📚 Priority 7: Documentation & Learning**
 - [ ] **Interactive tutorials** with Jupyter notebooks
 - [ ] **API documentation** with OpenAPI/Swagger specs
-- [ ] **Video walkthroughs** embedded in README
+- [x] **Video walkthroughs** embedded in README
 - [x] **Code examples** for different use cases
 - [x] **Best practices guide** for Claude API usage
 
