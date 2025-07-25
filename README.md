@@ -4,6 +4,24 @@
 
 A comprehensive showcase of Claude's capabilities designed for immediate developer delight. This lab demonstrates how to build practical GenAI applications with minimal setup and maximum clarity, featuring interactive web interface, multiple input methods, and real-world use cases.
 
+## 🎬 See Claude Labs in Action
+
+<div align="center">
+
+[![Claude Labs Quick Start Demo - Click to Watch](https://img.youtube.com/vi/KOouK6yxhXg/0.jpg)](https://www.youtube.com/watch?v=KOouK6yxhXg)
+
+**▶️ Click the image above to watch the demo video**
+
+</div>
+
+**Watch this 3-minute demo to see Claude Labs in action:**
+
+- ⚡ **Lightning-fast setup** with cloud platforms
+- 💬 **Interactive chat** with Claude
+- 📄 **File upload** and summarization
+- 🌐 **URL processing** and web content analysis
+- 📊 **Real-time analytics** and monitoring
+
 ## ✨ Features
 
 - **⚡ Lightning-fast setup** - From zero to working in under 5 minutes (or 30 seconds with cloud platforms!)
