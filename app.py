@@ -7,6 +7,7 @@ import time
 from datetime import datetime
 import monitoring
 import pathlib
+import toml
 
 LOG_PATH = pathlib.Path("claude_labs.log")
 
@@ -221,6 +222,25 @@ with st.sidebar:
     2. Choose a model
     3. Start chatting or uploading files!
     """)
+
+    # Add theme toggle in sidebar
+    st.markdown('---')
+    theme_choice = st.radio('Theme', ['Auto', 'Light', 'Dark'], index=0)
+    theme_map = {'Auto': 'system', 'Light': 'light', 'Dark': 'dark'}
+    config_dir = pathlib.Path('.streamlit')
+    config_dir.mkdir(exist_ok=True)
+    config_path = config_dir / 'config.toml'
+    # Read current config
+    config = {}
+    if config_path.exists():
+        config = toml.load(config_path)
+    # Set theme
+    if 'theme' not in config:
+        config['theme'] = {}
+    config['theme']['base'] = theme_map[theme_choice]
+    with open(config_path, 'w') as f:
+        toml.dump(config, f)
+    st.info(f"Theme set to {theme_choice}. Please reload the page to apply the theme.")
 
 # Main content area
 tab1, tab2, tab3, tab4 = st.tabs(["💬 Chat", "📄 File Upload", "🌐 URL Processing", "📊 Analytics"])
