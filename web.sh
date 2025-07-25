@@ -57,5 +57,8 @@ echo "📱 Opening in browser: http://localhost:8501"
 echo "💡 Press Ctrl+C to stop"
 echo ""
 
+# Debug: print Python and Streamlit version
+python -c "import sys; print('Python:', sys.executable); import streamlit; print('Streamlit:', streamlit.__version__)"
+
 # Launch Streamlit
 python -m streamlit run app.py --server.port 8501 --server.address localhost 

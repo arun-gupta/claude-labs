@@ -1,3 +1,4 @@
+
 import streamlit as st
 import anthropic
 import requests
@@ -8,6 +9,19 @@ from datetime import datetime
 import monitoring
 import pathlib
 import toml
+
+# Theme mapping
+THEME_OPTIONS = ['Auto', 'Light', 'Dark']
+CONFIG_TO_RADIO = {'system': 'Auto', 'light': 'Light', 'dark': 'Dark'}
+RADIO_TO_CONFIG = {v: k for k, v in CONFIG_TO_RADIO.items()}
+
+# Read current theme from config.toml
+config_path = pathlib.Path('.streamlit/config.toml')
+current_config = 'system'
+if config_path.exists():
+    config = toml.load(config_path)
+    current_config = config.get('theme', {}).get('base', 'system')
+current_radio = CONFIG_TO_RADIO.get(current_config, 'Auto')
 
 LOG_PATH = pathlib.Path("claude_labs.log")
 
@@ -223,24 +237,59 @@ with st.sidebar:
     3. Start chatting or uploading files!
     """)
 
-    # Add theme toggle in sidebar
+    # Theme toggle
     st.markdown('---')
-    theme_choice = st.radio('Theme', ['Auto', 'Light', 'Dark'], index=0)
-    theme_map = {'Auto': 'system', 'Light': 'light', 'Dark': 'dark'}
-    config_dir = pathlib.Path('.streamlit')
-    config_dir.mkdir(exist_ok=True)
-    config_path = config_dir / 'config.toml'
-    # Read current config
-    config = {}
-    if config_path.exists():
-        config = toml.load(config_path)
-    # Set theme
-    if 'theme' not in config:
-        config['theme'] = {}
-    config['theme']['base'] = theme_map[theme_choice]
-    with open(config_path, 'w') as f:
-        toml.dump(config, f)
-    st.info(f"Theme set to {theme_choice}. Please reload the page to apply the theme.")
+    theme_choice = st.radio('Theme', THEME_OPTIONS, index=THEME_OPTIONS.index(current_radio))
+    st.markdown("""
+    <style>
+    :root {
+        --main-header-gradient-light: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        --main-header-gradient-dark: linear-gradient(90deg, #232526 0%, #414345 100%);
+        --feature-card-bg-light: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --feature-card-bg-dark: linear-gradient(135deg, #232526 0%, #414345 100%);
+        --feature-card-color-light: white;
+        --feature-card-color-dark: #eee;
+    }
+    .main-header {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+        background: var(--main-header-gradient-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .feature-card {
+        background: var(--feature-card-bg-light);
+        padding: 1.5rem;
+        border-radius: 10px;
+        color: var(--feature-card-color-light);
+        margin: 1rem 0;
+    }
+    [data-theme="dark"] .main-header {
+        background: var(--main-header-gradient-dark);
+    }
+    [data-theme="dark"] .feature-card {
+        background: var(--feature-card-bg-dark);
+        color: var(--feature-card-color-dark);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    # Inject theme CSS variables dynamically
+    theme_js = f"""
+    <script>
+    const theme = '{theme_choice}';
+    document.body.setAttribute('data-theme', theme === 'Auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme.toLowerCase());
+    </script>
+    """
+    st.markdown(theme_js, unsafe_allow_html=True)
+    st.info("Custom elements update instantly. To fully change the Streamlit UI theme, click Reload or refresh your browser.")
+    if st.button('🔄 Reload App'):
+        if RADIO_TO_CONFIG[theme_choice] != current_config:
+            config = {'theme': {'base': RADIO_TO_CONFIG[theme_choice]}}
+            with open(config_path, 'w') as f:
+                toml.dump(config, f)
+        st.experimental_rerun()
 
 # Main content area
 tab1, tab2, tab3, tab4 = st.tabs(["💬 Chat", "📄 File Upload", "🌐 URL Processing", "📊 Analytics"])
