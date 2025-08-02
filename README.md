@@ -8,7 +8,7 @@ A comprehensive showcase of Claude's capabilities designed for immediate develop
 
 <div align="center">
 
-[![DEMO VIDEO](https://img.shields.io/badge/🎬_DEMO_VIDEO-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000&color=FF0000)](https://www.youtube.com/watch?v=KOouK6yxhXg)
+[![DEMO VIDEO](https://img.shields.io/badge/🎬_DEMO_VIDEO-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=KOouK6yxhXg)
 
 **Watch the 3-minute demo to see Claude Labs in action!**
 
