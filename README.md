@@ -2,6 +2,11 @@
 
 [![YouTube Demo](https://img.shields.io/badge/YouTube-Demo%20Video-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=KOouK6yxhXg)
 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![Anthropic](https://img.shields.io/badge/Anthropic-Claude%20API-orange.svg)](https://docs.anthropic.com/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
 > **Comprehensive Claude API showcase with interactive web interface** - Get started in under 5 minutes!
 
 A comprehensive showcase of Claude's capabilities designed for immediate developer delight. This lab demonstrates how to build practical GenAI applications with minimal setup and maximum clarity, featuring interactive web interface, multiple input methods, and real-world use cases.
