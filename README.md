@@ -4,15 +4,7 @@
 
 A comprehensive showcase of Claude's capabilities designed for immediate developer delight. This lab demonstrates how to build practical GenAI applications with minimal setup and maximum clarity, featuring interactive web interface, multiple input methods, and real-world use cases.
 
-## 🎬 Demo Video
-
-<div align="center">
-
 [![YouTube Demo](https://img.shields.io/badge/YouTube-Demo%20Video-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=KOouK6yxhXg)
-
-**Watch the 3-minute demo to see Claude Labs in action!**
-
-</div>
 
 ## ✨ Features
 
